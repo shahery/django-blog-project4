@@ -1,7 +1,7 @@
 from django.db import models
+from django.urls import reverse
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
-from django.urls import reverse
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -30,7 +30,7 @@ class Post(models.Model):
         return self.likes.count()
 
     def get_absolute_url(self):
-        return reverse('post_detail', args=(str(self.slug)))
+        return reverse('home')
 
 
 class Comment(models.Model):
