@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django.urls import reverse
 
 # Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
@@ -18,6 +19,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
 
+
     class Meta:
         ordering = ['-created_on']
 
@@ -26,6 +28,9 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
+    def get_absolute_url(self):
+        return reverse('post_detail', args=(str(self.slug)))
 
 
 class Comment(models.Model):
