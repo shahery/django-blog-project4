@@ -29,7 +29,8 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.number_of_likes }} <i class="far fa-heart"></i>
-                                - {{ post.created_on }}</p> <small><a href="{% url 'edit_post' post.slug %}">Edit</a></small>
+                                - {{ post.created_on }}</p> <small><a href="{% url 'edit_post' post.slug %}">(Edit)</a>
+                                    <a href="{% url 'delete_post' post.slug %}">(Delete)</a></small>
                         </div>
                     </div>
                 </div>

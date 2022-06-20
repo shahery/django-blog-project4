@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
-from django.views.generic import UpdateView
+from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm, PostForm, EditForm
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -93,3 +94,9 @@ class EditPostView(UpdateView):
     form_class = EditForm
     template_name = 'edit_post.html'
     #fields = ['title', 'slug', 'content']
+
+
+class DeletePostView(DeleteView):
+    model = Post
+    template_name = 'delete_post.html'
+    success_url = reverse_lazy('home')
