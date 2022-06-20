@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
+from django.views.generic import UpdateView
 from django.http import HttpResponseRedirect
 from .models import Post
-from .forms import CommentForm, PostForm
+from .forms import CommentForm, PostForm, EditForm
 
 
 class PostList(generic.ListView):
@@ -87,3 +88,8 @@ class AddPostView(generic.CreateView):
     #fields = ('title', 'slug', 'author', 'content')
 
 
+class EditPostView(UpdateView):
+    model = Post
+    form_class = EditForm
+    template_name = 'edit_post.html'
+    #fields = ['title', 'slug', 'content']
