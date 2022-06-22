@@ -40,11 +40,11 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="fas fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="fas fa-thumbs-up"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="far fa-heart"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="far fa-thumbs-up"></i></button>
 
                                 {% endif %}
 
@@ -54,8 +54,7 @@
                             <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
                             <span class="text-secondary"> {{ post.number_of_likes }}</span>
-                        </strong><br><br><small><a href="{% url 'edit_post' post.slug %}">(Edit)</a>
-                            <a href="{% url 'delete_post' post.slug %}">(Delete)</a></small>
+                        </strong><br><br>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
@@ -119,5 +118,6 @@
     </div>
     <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
 </div>
+<br>
 
 {% endblock content %}

@@ -29,8 +29,11 @@
                             </a>
                             <hr />
                             <p class="card-text text-muted h6">{{ post.number_of_likes }} <i class="far fa-heart"></i>
-                                - {{ post.created_on }}</p> <small><a href="{% url 'edit_post' post.slug %}">(Edit)</a>
-                                    <a href="{% url 'delete_post' post.slug %}">(Delete)</a></small>
+                                - {{ post.created_on }}</p>
+                                {% if user.is_authenticated %}
+                                 <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
+                                    <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>
+                                    {% endif %}
                         </div>
                     </div>
                 </div>
