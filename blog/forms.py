@@ -1,7 +1,7 @@
 from .models import Comment, Post
 from django import forms
 
-
+    
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
@@ -11,7 +11,7 @@ class CommentForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'author', 'content')
+        fields = ('title', 'slug', 'author', 'content', 'featured_image')
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Title Placeholder Area'}),
