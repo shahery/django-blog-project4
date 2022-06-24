@@ -11,7 +11,7 @@ class CommentForm(forms.ModelForm):
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'author', 'content', 'featured_image')
+        fields = ('title', 'slug', 'author', 'content', 'featured_image',)
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Title Placeholder Area'}),
@@ -24,11 +24,10 @@ class PostForm(forms.ModelForm):
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'content')
+        fields = ('title', 'slug', 'content', 'featured_image',)
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Title Placeholder Area'}),
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
-            #'author': forms.Select(attrs={'class': 'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }
