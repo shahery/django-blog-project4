@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1> {{ cats }} </h1>
+
+{% for post in category_posts %}
+<div class="col-md-5">
+    <div class="card mb-5">
+        <div class="card-body">
+            <div class="image-container">
+                {% if "placeholder" in post.featured_image.url %}
+                <img class="card-img-top"
+                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                {% else %}
+                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                {% endif %}
+                <div class="image-flash">
+                    <p class="author">Author: {{ post.author }}</p>
+                </div>
+            </div>
+            <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text">{{ post.excerpt }}</p>
+            </a>
+            <hr />
+            <p class="card-text text-muted h6">{{ post.number_of_likes }} <i class="far fa-heart"></i>
+                - {{ post.created_on }}</p>
+                {% if user.is_authenticated %}
+                 <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
+                    <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>
+                    {% endif %}
+        </div>
+    </div>
+</div>
+{% if forloop.counter|divisibleby:1 %}
+</div>
+<div class="row">
+{% endif %}
+{% endfor %}
+
+{%endblock%}
