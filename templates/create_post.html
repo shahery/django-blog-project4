@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="d-flex justify-content-center">
-<h1>Add Post...</h1>
+<h1>Add Post</h1>
 </div>
 <br/>
 <div class="d-flex justify-content-center">
@@ -12,7 +12,7 @@
             {% csrf_token %}
             {{ form.media }}
             {{ form.as_p }}
-            <button class="btn btn-secondary">Post</button> <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+            <button class="btn btn-signup">Post</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
     </div>
 </div>
 <br>

@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="d-flex justify-content-center">
-<h1>Delete Post...</h1>
+<h1>Delete Post</h1>
 </div>
 <br/>
 <h3>Delete: {{ post.title }}</h3>
@@ -13,7 +13,7 @@
         <form method="POST">
             {% csrf_token %}
             <strong>Are you sure!<br>You want to delete?</strong><br><br>
-            <button class="btn btn-secondary">Delete Post!</button> <a href="{% url 'home' %}" class="btn btn-secondary">Back</a>
+            <button class="btn btn-signup">Delete Post!</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
     </div>
 </div>
 

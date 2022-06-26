@@ -1,16 +1,16 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #e8e2d8;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #4A4A4F;
+    color: #d85428;
 }
 
 .red-o {
-    color: #E84610;
+    color: #dd957d;
 }
 
 .thin {
@@ -18,15 +18,15 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #a3cfc7;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #2a4878;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #abbdd9;
 }
 
 .card {
@@ -43,7 +43,7 @@ body {
     bottom: 5%;
     min-width: 30%;
     left: -2px;
-    background-color: #23BBBB;
+    background-color: #d85428;
 }
 
 .author {
@@ -88,7 +88,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #5a81ad;
 }
 
 .post-link:hover,
@@ -107,24 +107,24 @@ body {
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #eb6134;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #eb6134;
 }
 
 .link {
-    color: #23BBBB;
+    color: #eb6134;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #d85428;
     text-decoration: underline;
 }
 
@@ -140,3 +140,11 @@ body {
     background: transparent;
     border: none;
 }
+
+.circle {
+    width: 130px;
+    height: 130px;
+    background: white;
+    border-radius: 50%;
+    border-color: black;
+  }
