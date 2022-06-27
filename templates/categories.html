@@ -24,7 +24,7 @@
                 <p class="card-text">{{ post.excerpt }}</p>
             </a>
             <hr />
-            <p class="card-text text-muted h6">{{ post.number_of_likes }} <i class="far fa-heart"></i>
+            <p class="card-text text-muted h6 bg-color">{{ post.number_of_likes }} <i class="far fa-heart bg-color"></i>
                 - {{ post.created_on }}</p>
                 {% if user.is_authenticated %}
                  <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
@@ -35,9 +35,8 @@
 </div>
 {% if forloop.counter|divisibleby:1 %}
 </div>
-<a href="{% url 'home' %}" class="btn btn-signup">Back</a>
 <div class="row">
 {% endif %}
 {% endfor %}
-
+<p class="cat-back"><a href="{% url 'home' %}" class="btn btn-signup">Back</a></p>
 {%endblock%}

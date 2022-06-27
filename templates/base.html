@@ -26,8 +26,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-light dark-bg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><div class="bg-dark rounded-circle"><span class="brand">blog<span
-                        class="thin">web</span></a></div>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">blog<span
+                        class="thin">web</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,20 +39,20 @@
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'add_post' %}">Add Post</a>
+                        <a class="nav-link nav-color" href="{% url 'add_post' %}">Add Post</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'add_category' %}">Add Category</a>
+                        <a class="nav-link nav-color" href="{% url 'add_category' %}">Add Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
+                        <a class="nav-link nav-color" href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_signup' %}">Sign up</a>
+                        <a class="nav-link nav-color" href="{% url 'account_signup' %}">Sign up</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Login</a>
+                        <a class="nav-link nav-color" href="{% url 'account_login' %}">Login</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -82,8 +82,8 @@
     <!-- Footer -->
     <footer class="footer mt-auto py-3 dark-bg">
         <p class="m-0 text-center text-white">Website made for educational purposes</p>
-        <p class="m-0 text-center text-white">Follow me on:<a><br><a href="https://github.com" target="_blank" rel="noopener" aria-label="visits my github page(open in a new tab)"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="visits my linkedin page(open in a new tab)"><i class="fab fa-linkedin"></i></a></p>
+        <p class="m-0 text-center text-white">Follow me on:<a><br><a href="https://github.com" target="_blank" rel="noopener" aria-label="visits my github page(open in a new tab)"><i class="fab fa-github fa-2x"></i></a>  
+            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="visits my linkedin page(open in a new tab)"><i class="fab fa-linkedin fa-2x"></i></a></p>
     </footer>
     <script>
         setTimeout(function () {

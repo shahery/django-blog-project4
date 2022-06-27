@@ -19,17 +19,15 @@
                                 {% else %}
                                 <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <h2 class="card-title">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.number_of_likes }} <i class="far fa-heart"></i>
-                                - {{ post.created_on }} - <a class="red-o" href="{% url 'category' post.category %}">{{ post.category }}</a></p>
+                            <p class="card-text text-muted h6 bg-color">{{ post.number_of_likes }} <i class="far fa-heart bg-color"></i>
+                                - {{ post.created_on }}- <a class="red-o" href="{% url 'category' post.category %}">{{ post.category }}</a></p>
+                                <p class="author">Author: {{ post.author }}</p><br>
                                 {% if user.is_authenticated %}
                                  <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
                                     <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>

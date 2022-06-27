@@ -40,25 +40,25 @@
                                 {% csrf_token %}
                                 {% if liked %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="fas fa-thumbs-up"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="fas fa-thumbs-up bg-color"></i></button>
 
                                 {% else %}
 
-                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="far fa-thumbs-up"></i></button>
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn_like"><i class="far fa-thumbs-up bg-color"></i></button>
 
                                 {% endif %}
 
                             </form>
                             {% else %}
 
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <span class="text-secondary bg-color"><i class="far fa-heart"></i></span>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }}</span>
+                            <span class="text-secondary bg-color"> {{ post.number_of_likes }}</span>
                         </strong><br><br>
                     </div>
                     <div class="col-1">
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <strong class="text-secondary bg-color"><i class="far fa-comments bg-color"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
                             {{ total_comments }}</strong>
                         {% endwith %}

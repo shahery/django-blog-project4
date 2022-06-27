@@ -10,7 +10,7 @@ body {
 }
 
 .red-o {
-    color: #dd957d;
+    color: #d85428;
 }
 
 .thin {
@@ -38,16 +38,8 @@ body {
     position: relative;
 }
 
-.image-flash {
-    position: absolute;
-    bottom: 5%;
-    min-width: 30%;
-    left: -2px;
-    background-color: #d85428;
-}
-
 .author {
-    color: white;
+    color: black;
     margin: 4px;
     text-transform: uppercase;
 }
@@ -57,12 +49,12 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 35vh;
     width: 100%;
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #2a4878;
     color: white;
     position: relative;
 }
@@ -79,7 +71,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #2a4878;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -88,7 +80,7 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #5a81ad;
+    color: #2a4878;
 }
 
 .post-link:hover,
@@ -141,10 +133,29 @@ body {
     border: none;
 }
 
-.circle {
-    width: 130px;
-    height: 130px;
-    background: white;
-    border-radius: 50%;
-    border-color: black;
-  }
+.bg-color {
+    color: black !important;
+}
+
+.nav-color {
+    color: white !important;
+}
+
+.nav-color:hover,
+.nav-color:active {
+    color: black !important;
+}
+
+.fa-github {
+    color: 	black;
+    margin-right: 10px;
+    
+}
+
+.fa-linkedin {
+    color: #0A66C2;
+}
+
+.cat-back {
+    margin-left: 15px;
+}
