@@ -29,9 +29,11 @@
                                 - {{ post.created_on }}- <a class="red-o" href="{% url 'category' post.category %}">{{ post.category }}</a></p>
                                 <p class="author">Author: {{ post.author }}</p><br>
                                 {% if user.is_authenticated %}
-                                 <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
-                                    <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>
+                                    {% if user.id == post.author.id %}
+                                        <small><a href="{% url 'edit_post' post.slug %}" class = "btn btn-signup">Edit</a>
+                                            <a href="{% url 'delete_post' post.slug %}" class = "btn btn-signup">Delete</a></small>
                                     {% endif %}
+                                {% endif %}
                         </div>
                     </div>
                 </div>

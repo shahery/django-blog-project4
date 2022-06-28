@@ -117,7 +117,6 @@ body {
 .link:hover,
 .link:active {
     color: #d85428;
-    text-decoration: underline;
 }
 
 .btn-like {
@@ -147,13 +146,17 @@ body {
 }
 
 .fa-github {
-    color: 	black;
+    color: 	white;
+    background-color: black;
     margin-right: 10px;
+    font-size: x-large !important;
     
 }
 
 .fa-linkedin {
     color: #0A66C2;
+    background-color: white;
+    font-size: x-large !important;
 }
 
 .cat-back {

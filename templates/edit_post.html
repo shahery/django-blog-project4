@@ -6,15 +6,25 @@
 <h1>Edit Post</h1>
 </div>
 <br/>
-<div class="d-flex justify-content-center">
-    <div class="form-group">
-        <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            {{ form.media }}
-            {{ form.as_p }}
-            <button class="btn btn-signup">Update</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
-    </div>
-</div>
+{% if user.is_authenticated %}
+    {% if user.id == post.author.id %}
+        <div class="d-flex justify-content-center">
+            <div class="form-group">
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form.media }}
+                    {{ form.as_p }}
+                    <button class="btn btn-signup">Update</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+            </div>
+        </div>
+    {% else %}
+        <p class="cat-back">Sorry, you are not allowed to edit this post!</p><br>
+        <a href="{% url 'home' %}" class="btn btn-signup cat-back">Back</a>
+    {% endif %}
+{% else %}
+    <p class="cat-back">Sorry, you are not allowed to edit this post!</p><br>
+    <a href="{% url 'home' %}" class="btn btn-signup cat-back">Back</a>
+{% endif %}
 <br>
 
 {% endblock %}
