@@ -1,8 +1,8 @@
 # Django blog
-  Django blog is the blogs website made for the educational purposes for the milestone project.
+  Django blog is the blogpost website made for the educational purposes for the milestone project.
   In this django blog website, there are a lot of functionalities for the users like, users can
   create the posts with the images, can add or select the category for the post, read the post, 
-  edit or update the post, delete the post, like the post and can leave a comment on the post.
+  edit or update the post, delete the post, can like the post and can leave a comment on the post.
   
 
 
@@ -20,11 +20,31 @@
   * [Credits](#credits)
 
 # Users stories:
-     												
+  * As a user I can read the blogposts
+  * As a user I can select the category to read that kind of posts
+  * As a user I can create the post
+  * As a user I can add the category for the post
+  * As a user I can edit or update the post
+  * As a user I can delete the post
+  * As a user I can like the post
+  * As a user I can comment on the post
+ 												
 
   [Back to top](#)
 
 # Existing Features
+  * Add the post:
+    * Users can create the posts along with uploading images
+    * steps to create the posts are as below
+      * First put the title in the title field for your post.
+      * Put the title tag for your post in the slug field.
+      * As you have logged in so, you can select your name as the author for the post.
+      * You can select the category by clicking on the category field or you can add
+       the category by clicking on the 'Add Category' option showing on the navbar
+       for the post according to your choice.
+      * You can add the content for your post and style it using the editor showing
+       in the content field.
+      * You can also upload the image using the upload image field for your post.
 
    [Back to top](#)
 
@@ -65,6 +85,8 @@
    [Back to top](#)
 
 # Colour
+  * #d85428, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
+   of these colours were used in the website for foreground and background.
 
   [Back to top](#)
 # Deployment
@@ -80,7 +102,7 @@
 # Credits
  ## Content
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
-   * 
+   * Few codes were also learnt from [codemy.com](https://codemy.com/)
 
  ## Media
 

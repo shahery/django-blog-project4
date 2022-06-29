@@ -1,10 +1,13 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy
 from .models import Post, Category
 from .forms import CommentForm, PostForm, EditForm
-from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -35,7 +38,7 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
@@ -81,31 +84,28 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-
 class AddPostView(generic.CreateView):
     model = Post
     form_class = PostForm
     template_name = 'create_post.html'
-    #fields = ('title', 'slug', 'author', 'content')
 
 
 class AddCategoryView(generic.CreateView):
     model = Category
-    #form_class = PostForm
     template_name = 'add_category.html'
     fields = '__all__'
-    #fields = ('title', 'slug', 'author', 'content')
+
 
 def CategoryView(request, cats):
     category_posts = Post.objects.filter(category=cats)
-    return render(request, 'categories.html', {'cats':cats.title(), 'category_posts':category_posts})
+    return render(request, 'categories.html', {'cats': cats.title(),
+                  'category_posts': category_posts})
 
 
 class EditPostView(UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
-    #fields = ['title', 'slug', 'content']
 
 
 class DeletePostView(DeleteView):

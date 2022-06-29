@@ -1,7 +1,8 @@
-#!/usr/bin/env python
-"""Django's command-line utility for administrative tasks."""
-import os
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 import sys
+import os
 
 
 def main():

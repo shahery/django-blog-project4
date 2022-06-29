@@ -1,3 +1,6 @@
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
 from django.db import models
 from django.urls import reverse
 from django.contrib.auth.models import User
@@ -21,7 +24,8 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
+    author = models.ForeignKey(User, on_delete=models.CASCADE,
+                               related_name="blog_posts")
     updated_on = models.DateTimeField(auto_now=True)
     content = RichTextField(null=True, blank=True)
     featured_image = CloudinaryField('image', default='placeholder')
@@ -30,7 +34,6 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=1)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     category = models.CharField(max_length=200, default='uncategorized')
-
 
     class Meta:
         ordering = ['-created_on']
@@ -59,4 +62,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
-
