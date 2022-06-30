@@ -40,11 +40,13 @@ class PostForm(forms.ModelForm):
 class EditForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ('title', 'slug', 'content', 'featured_image',)
+        fields = ('title', 'slug', 'category', 'content', 'featured_image',)
 
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control',
                                      'placeholder': 'Title Placeholder Area'}),
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
+            'category': forms.Select(choices=cat_list, attrs={'class':
+                                     'form-control'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
         }
