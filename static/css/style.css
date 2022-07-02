@@ -70,11 +70,11 @@ body {
     top: 0;
     right: 90%;
     height: 100%;
-    width: 150%;
+    width: 100%;
     background: #2a4878;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
+    -webkit-transform: skew(30deg);
+    -moz-transform: skew(30deg);
+    transform: skew(30deg);
     z-index: 100;
 }
 

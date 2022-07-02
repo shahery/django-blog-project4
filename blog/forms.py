@@ -28,10 +28,11 @@ class PostForm(forms.ModelForm):
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control',
                                      'placeholder': 'Title Placeholder Area'}),
-            'slug': forms.TextInput(attrs={'class': 'form-control'}),
+            'slug': forms.TextInput(attrs={'class': 'form-control',
+                                    'placeholder': 'Title tag Placeholder Area'}),
             'author': forms.Select(attrs={'class': 'form-control'}),
             'category': forms.Select(choices=cat_list, attrs={'class':
-                                     'form-control'}),
+                                     'form-control', 'placeholder': 'Choose or select category'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
 
         }
