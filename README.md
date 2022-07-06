@@ -106,6 +106,15 @@
 
   ## Bugs
    ### solved bugs
+    * While creating the project I faced the bug of relation does not exist error, which actually took a lot of my time to solve. It was actually the migrations error because I accidentally deleted some migrations in my project.
+    * Steps I took to solve:
+      * Firstly, I deleted all the migrations in my apps except __init__.py file
+      * Then I deleted the db.sqlite3 file showing in the files
+      * Because the database I was using connected with heroku so I had to reset the database in the heroku platform and also I deleted the heroku postgres and added the new one and also added the new DATABASE_URL in the env.py file
+      * Then I commented out the admin.py, forms.py, models.py, views.py, urls.py files and also one line in the urls of blogweb in which blog app was connected
+      * Then I ran the command python3 manage.py makemigrations and python3 manage.py migrate
+      * After that I uncommented the models.py file and ran the commands python3 manage.py makemigrations blog and python3 manage.py migrate blog for my models
+      * And finally I uncommented all the files which I commented out before and ran the server using the command python3 manage.py runserver and the bug was fixed in this way.
 
  ## Unfixed Bugs
    * No unfixed bugs.
@@ -150,7 +159,7 @@
    * Few codes were also learnt from [codemy.com](https://codemy.com/)
 
  ## Media
-   * Cloudinary is used in this project for images and videos purposes.
+   * Cloudinary is used in this project for images purposes.
 
  ## Acknowledgements
    * My mentor who guided me througout the project.
