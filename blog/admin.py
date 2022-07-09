@@ -16,6 +16,5 @@ class PostAdmin(SummernoteModelAdmin):
     summernote_fields = ('content')
 
 
-
 admin.site.register(Category)
 admin.site.register(Comment)

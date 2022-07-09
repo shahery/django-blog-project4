@@ -3,11 +3,13 @@
 # pylint: disable=missing-function-docstring
 from django.test import TestCase
 
+
 class TestViews(TestCase):
 
     def test_get_home_page(self):
         response = self.client.get('/')
-        self.assertEqual(response.status_code, 200)  
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'base.html')
 
     def test_get_post_detail_page(self):
         response = self.client.get('/post_detail')
@@ -18,7 +20,7 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 301)
 
     def test_can_add_post(self):
-        response = self.client.get('/add_post')
+        response = self.client.post('/add_post', {'title': 'Test added post'})
         self.assertEqual(response.status_code, 301)
 
     def test_can_add_category(self):
@@ -36,4 +38,3 @@ class TestViews(TestCase):
     def test_get_category_page(self):
         response = self.client.get('/category')
         self.assertEqual(response.status_code, 301)
-        

@@ -1,0 +1,21 @@
+<!-- {% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center">
+<h1>Delete Category</h1>
+</div>
+<br>
+{% if user.is_authenticated %}
+        <div class="d-flex justify-content-center">
+            <div class="form-group">
+                <form method="POST">
+                    {% csrf_token %}
+                    <strong>This will delete the category</strong><br>
+                    <strong>Are you sure!<br>You want to delete the category?</strong><br><br>
+                    <button class="btn btn-signup">Delete Category!</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+            </div>
+        </div>
+{% endif %}
+
+{% endblock %} -->

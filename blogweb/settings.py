@@ -53,7 +53,17 @@ INSTALLED_APPS = [
     'crispy_forms',
     'blog',
     'ckeditor',
+    'django_extensions',
 ]
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
+
+GRAPH_MODELS = {
+  'app_labels': ["blog", "crispy_forms", "auth"],
+}
 
 SITE_ID = 1
 
@@ -106,16 +116,16 @@ WSGI_APPLICATION = 'blogweb.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-     }
- }
-
 # DATABASES = {
-#     'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
-# }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#      }
+#  }
+
+DATABASES = {
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

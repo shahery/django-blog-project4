@@ -24,7 +24,7 @@ class Category(models.Model):
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
-    author = models.ForeignKey(User, on_delete=models.CASCADE, default='admin')
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
     updated_on = models.DateTimeField(auto_now=True)
     content = RichTextField(null=True, blank=True)
     featured_image = CloudinaryField('image', default='placeholder')
@@ -38,7 +38,7 @@ class Post(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return self.title 
+        return self.title
 
     def number_of_likes(self):
         return self.likes.count()

@@ -1,20 +1,20 @@
-# from django.test import TestCase
-# from blog.models import Post
+# pylint: disable=missing-module-docstring
+# pylint: disable=missing-class-docstring
+# pylint: disable=missing-function-docstring
+from django.test import TestCase
+from blog.models import Category
 
 
-# class TestBlogModels(TestCase):
+class TestBlogModels(TestCase):
 
-#     def test_model_Post(self):
-#         title = Post.objects.create(title="Django Testing")
-#         content = Post.objects.create(content='This is something')
-#         self.assertEqual(srt(title), 'Django Testing')
+    def test_model_Category(self):
+        name = Category.objects.create(name="Django Testing")
+        self.assertNotEqual(name, '')
 
-    # def test_model_Comment(self):
-    #     self.assertEqual(str(self.title), 'Django')
+    def test_category_string_method_returns_name(self):
+        name = Category.objects.create(name='test blog name')
+        self.assertEqual(str(name), 'test blog name')
 
-    # def test_model_Category(self):
-    #     self.assertEqual(str(self.title), 'Django')
-
-    # def test_post_string_method_returns_name(self):
-    #     post = Post.objects.create(name='Test Category Name')
-    #     self.assertEqual(str(post), 'Test Category Name')
+    def test_get_absolute_url(self):
+        response = self.client.get('/')
+        self.assertEqual(response.status_code, 200)

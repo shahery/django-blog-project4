@@ -15,4 +15,6 @@ urlpatterns = [
     path('post/<slug:slug>/remove', DeletePostView.as_view(),
          name='delete_post'),
     path('category/<str:cats>/', CategoryView, name='category')
+    # path('delete_categroy/slug/', DeleteCategoryView.as_view(),
+    #      name='delete_categroy')
 ]
