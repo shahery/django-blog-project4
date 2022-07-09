@@ -13,9 +13,11 @@
   * [Users stories](#users-stories)
   * [Existing Features](#existing-features)
   * [Technology Used](#technology-used)
+  * [Agile Technique](#agile-technique)
   * [Features left to implement](#features-left-to-implement)
   * [Testing](#testing)
   * [Bugs](#bugs)
+  * [Project visualization](#project-visualiztion)
   * [Colour](#colour)
   * [Deployment](#deployment)
   * [Credits](#credits)
@@ -112,9 +114,14 @@
 
    [Back to top](#)
 
- ## Features left to implement
-  
+# Agile Technique:
+  * Agile technique is used in this project. You can have a look here
+    [Agile](https://github.com/users/shahery/projects/4) 
 
+ ## Features left to implement
+  * I will add the user profile with image upload option in the future for the users who create 
+  the account and also edit profile option so they can edit the profile.
+  
 # Testing
   I have manually tested this project by doing the following:
   * Passed the code through a PEP8 linter and confirmed there are no problems
@@ -143,6 +150,11 @@
    * No unfixed bugs.
    
    [Back to top](#)
+
+# Project visualization:
+  ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
+
+  [Back to top](#)
 
 # Colour
   * #d85428, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
