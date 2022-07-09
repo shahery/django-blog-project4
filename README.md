@@ -34,12 +34,19 @@
   [Back to top](#)
 
 # Existing Features
+  * Navbar:
+    ![pic1](https://user-images.githubusercontent.com/95220937/178114246-75a2658a-6a79-471d-a262-98ff567d9145.png)
+   * after login Navbar:
+    ![pic8](https://user-images.githubusercontent.com/95220937/178114505-36df0878-f285-4e88-a277-37e1e3642514.png)
+
   * Sign Up:
     * Users can register their account by clicking on the sign up button showing
       on the navbar.
+      ![pic6](https://user-images.githubusercontent.com/95220937/178114614-83477fe7-537d-48ea-8184-798dffbf5e09.png)
   * Login:
     * Users can login by clicking on the button showing on the navbar next to 
       sign up so that they can enjoy the functionalities of the website.
+      ![pic7](https://user-images.githubusercontent.com/95220937/178114651-2f843ebf-1064-4074-bc66-4fcec72ffd3f.png)
     * Note:
           Users can only create, edit and delete the post by creating their account
           on the website.
@@ -58,21 +65,37 @@
       * You can also upload the image using the upload image field for your post.
       * If users don't upload the image for their post, then default image will be
         shown for their post.
+        ![pic11](https://user-images.githubusercontent.com/95220937/178114736-135f608b-a98c-40f6-abb6-c5daf9f66041.png)
+        ![pic12](https://user-images.githubusercontent.com/95220937/178114768-fd5cf1d1-4ecb-424e-9095-3904b9f442a9.png)
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the
       image of the post.
-    * Read the category postblog:
-      * Users can read the category post by clicking on the category link showing
-        next to the time of post created.
+      ![pic3](https://user-images.githubusercontent.com/95220937/178114802-3ee61823-a93f-4495-9b31-c9fe5f0e55da.png)
+  * Like the post:
+    * Users can like the post.
+     ![pic16](https://user-images.githubusercontent.com/95220937/178115174-7f189379-7c2d-45d8-b334-c7aea5e82ae9.png)
+  * Comment on the post:
+    * Users can comment on the post.
+    ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
+  * Read the category postblog:
+    * Users can read the category post by clicking on the category link showing
+      next to the time of post created.
+      ![pic4](https://user-images.githubusercontent.com/95220937/178114876-34f59cbe-f780-4f8b-85d5-a204c154b0d3.png)
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
       the image of the post.
+      ![pic13](https://user-images.githubusercontent.com/95220937/178114930-3b96ec0b-013c-4041-8469-ffcd8320f339.png)
+      ![pic14](https://user-images.githubusercontent.com/95220937/178114952-785cf8b7-5768-4857-b7fa-9daf737fe819.png)
   * Delete the post:
     * Users can delete the post by clicking on the delete button showing below the
       image of the post.
     * Users cannot delete the others post. If they try to delete the others post
       then a message will be displayed showing "sorry, you are not allowed to 
       delete this post"
+      ![pic15](https://user-images.githubusercontent.com/95220937/178114998-f78c3cd1-1e72-4874-83ef-0ab155081c59.png)
+  * Footer:
+    * Footer displays the social links and purpose of post.
+      ![pic17](https://user-images.githubusercontent.com/95220937/178115076-2f020272-6143-49fb-870f-a79223d43f21.png)
 
    [Back to top](#)
 
