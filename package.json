@@ -1,0 +1,22 @@
+{
+  "name": "django-blog-project4",
+  "version": "1.0.0",
+  "description": "Blogweb is the blogpost website made for the educational purposes for the milestone project.   This website is created for the users who love social media. In this blogweb website, there    are a lot of functionalities for the users like, users can create the posts with the images, can    add or select the category for the post, read the post, edit or update the post, delete the post,   can like the post and can leave a comment on the post.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahery/django-blog-project4.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shahery/django-blog-project4/issues"
+  },
+  "homepage": "https://github.com/shahery/django-blog-project4#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
