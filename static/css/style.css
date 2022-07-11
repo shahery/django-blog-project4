@@ -158,6 +158,7 @@ body {
 
 .bg-color {
     color: black !important;
+    background-color: #fff !important;
 
 }
 
@@ -176,6 +177,7 @@ body {
     color: 	white;
     margin-right: 10px;
     font-size: x-large !important;
+    display: inline;
 
 }
 
@@ -183,6 +185,7 @@ body {
     color: #0A66C2;
     overflow: hidden !important;
     font-size: x-large !important;
+    display: inline !important;
 
 }
 
