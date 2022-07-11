@@ -16,6 +16,12 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 10
 
+    def get_context_data(self, *args, **kwargs):
+        cat_menu = Category.objects.all()
+        context = super(PostList, self).get_context_data(*args, **kwargs)
+        context["cat_menu"] = cat_menu
+        return context
+
 
 class PostDetail(View):
 
@@ -113,10 +119,3 @@ class DeletePostView(DeleteView):
     model = Post
     template_name = 'delete_post.html'
     success_url = reverse_lazy('home')
-
-
-# class DeleteCategoryView(generic.CreateView):
-#     model = Category
-#     template_name = 'delete_category.html'
-#     fields = '__all__'
-    # success_url = reverse_lazy('home')

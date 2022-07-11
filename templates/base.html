@@ -37,6 +37,18 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
+                    <!-- Category menu code -->
+                    {% if cat_menu %}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle nav-color" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                {% for item in cat_menu %}
+                                <a class="dropdown-item" href="{% url 'category' item %}">{{ item }}</a>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    {% endif %}
                     {% if user.is_authenticated %}
                     <li class="nav-item">
                         <a class="nav-link nav-color" href="{% url 'add_post' %}">Add Post</a>
