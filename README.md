@@ -37,10 +37,15 @@
 
 # Existing Features
   * Navbar:
-    ![pic1](https://user-images.githubusercontent.com/95220937/178114246-75a2658a-6a79-471d-a262-98ff567d9145.png)
-   * after login Navbar:
-    ![pic8](https://user-images.githubusercontent.com/95220937/178114505-36df0878-f285-4e88-a277-37e1e3642514.png)
-
+    * Users can read the categories, sign up and login using the links showing on the navbar.
+    ![navbar2](https://user-images.githubusercontent.com/95220937/178305659-02981b1a-e294-48c2-8391-fe6757f64e40.png)
+  * After login Navbar:
+    * Users can read the categories, add post, add category and logout using the links showing on the navbar.
+    ![navbar1](https://user-images.githubusercontent.com/95220937/178306003-a1296450-fda7-4370-a607-168fadb4bb56.png)
+  * Read the category postblog:
+    * Users can read the category post by clicking on the categories dropdown link showing
+      on the navbar.
+      ![pic4](https://user-images.githubusercontent.com/95220937/178114876-34f59cbe-f780-4f8b-85d5-a204c154b0d3.png)
   * Sign Up:
     * Users can register their account by clicking on the sign up button showing
       on the navbar.
@@ -79,10 +84,6 @@
   * Comment on the post:
     * Users can comment on the post.
     ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
-  * Read the category postblog:
-    * Users can read the category post by clicking on the category link showing
-      next to the time of post created.
-      ![pic4](https://user-images.githubusercontent.com/95220937/178114876-34f59cbe-f780-4f8b-85d5-a204c154b0d3.png)
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
       the image of the post.
