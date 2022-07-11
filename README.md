@@ -95,6 +95,8 @@
       then a message will be displayed showing "sorry, you are not allowed to 
       delete this post"
       ![pic15](https://user-images.githubusercontent.com/95220937/178114998-f78c3cd1-1e72-4874-83ef-0ab155081c59.png)
+  * Site pagination:
+    * Site is paginated for 10 posts at one page when posts will be more than 10, it will display on the next page.
   * Footer:
     * Footer displays the social links and purpose of post.
       ![pic17](https://user-images.githubusercontent.com/95220937/178115076-2f020272-6143-49fb-870f-a79223d43f21.png)
