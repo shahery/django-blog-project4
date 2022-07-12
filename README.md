@@ -130,6 +130,10 @@
   * Passed the code through a PEP8 linter and confirmed there are no problems
   * Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
   * Tested in my local terminal and the Code Institute Heroku terminal
+ ## Python and Javascript Testing:
+  * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
+  ![Python-test](https://user-images.githubusercontent.com/95220937/178474580-cbe19091-6625-4829-87a4-65f8e51c60fc.png)
+  ![js-test](https://user-images.githubusercontent.com/95220937/178474501-a6d41196-1658-4d5c-b913-6d01e29772f0.png)
 
  ## Validator Testing
    * PEP8
