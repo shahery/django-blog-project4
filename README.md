@@ -72,7 +72,7 @@
       * You can also upload the image using the upload image field for your post.
       * If users don't upload the image for their post, then default image will be
         shown for their post.
-        ![pic11](https://user-images.githubusercontent.com/95220937/178114736-135f608b-a98c-40f6-abb6-c5daf9f66041.png)
+        ![addpost](https://user-images.githubusercontent.com/95220937/178517439-23e226e7-5db6-4a7e-a854-edcaf5584efb.png)
         ![pic12](https://user-images.githubusercontent.com/95220937/178114768-fd5cf1d1-4ecb-424e-9095-3904b9f442a9.png)
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the

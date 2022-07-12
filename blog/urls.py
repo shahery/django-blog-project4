@@ -3,7 +3,8 @@
 # pylint: disable=missing-function-docstring
 from django.urls import path
 from . import views
-from .views import AddPostView, EditPostView, DeletePostView, AddCategoryView, CategoryView
+from .views import AddPostView, EditPostView, DeletePostView
+from .views import AddCategoryView, CategoryView
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),
@@ -15,6 +16,4 @@ urlpatterns = [
     path('post/<slug:slug>/remove', DeletePostView.as_view(),
          name='delete_post'),
     path('category/<str:cats>/', CategoryView, name='category')
-    # path('delete_categroy/slug/', DeleteCategoryView.as_view(),
-    #      name='delete_categroy')
 ]
