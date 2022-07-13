@@ -55,7 +55,7 @@
       sign up so that they can enjoy the functionalities of the website.
       ![pic7](https://user-images.githubusercontent.com/95220937/178114651-2f843ebf-1064-4074-bc66-4fcec72ffd3f.png)
     * Note:
-          Users can only create, edit and delete the post by creating their account
+          Users can only create, edit and delete the post by registering their account
           on the website.
        
   * Add the post:
@@ -63,7 +63,6 @@
     * steps to create the posts are as below
       * First put the title in the title field for your post.
       * Put the title tag for your post in the slug field.
-      * As you have logged in so, you can select your name as the author for the post.
       * You can select the category by clicking on the category field or you can add
        the category by clicking on the 'Add Category' option showing on the navbar
        for the post according to your choice.
@@ -79,10 +78,10 @@
       image of the post.
       ![pic3](https://user-images.githubusercontent.com/95220937/178114802-3ee61823-a93f-4495-9b31-c9fe5f0e55da.png)
   * Like the post:
-    * Users can like the post.
+    * Users can like the post by clicking on the icon of thumbs up.
      ![pic16](https://user-images.githubusercontent.com/95220937/178115174-7f189379-7c2d-45d8-b334-c7aea5e82ae9.png)
   * Comment on the post:
-    * Users can comment on the post.
+    * Users can comment on the post by writing in the body field showing.
     ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
@@ -125,16 +124,14 @@
   the account and also edit profile option so they can edit the profile.
   
 # Testing
-  I have manually tested this project by doing the following:
-  * Passed the code through a PEP8 linter and confirmed there are no problems
-  * Given invalid inputs: strings when numbers are expected, out of bounds inputs, same input twice
-  * Tested in my local terminal and the Code Institute Heroku terminal
  ## Python and Javascript Testing:
   * automated tests for python and javascript were undertaken to check the functioning of the codes and it were all passed.
   ![Python-test](https://user-images.githubusercontent.com/95220937/178474580-cbe19091-6625-4829-87a4-65f8e51c60fc.png)
   ![js-test](https://user-images.githubusercontent.com/95220937/178474501-a6d41196-1658-4d5c-b913-6d01e29772f0.png)
 
  ## Validator Testing
+   I have manually tested this project by doing the following:
+   * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
    * Html checker:
@@ -169,7 +166,7 @@
    
    [Back to top](#)
 
-# Project visualization:
+# Project visualization diagram:
   ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
 
   [Back to top](#)
@@ -181,14 +178,7 @@
   [Back to top](#)
 # Deployment
  This project was deployed using the code institute's mock terminal for heroku.
-   * Steps for automatic deployment:
-     * Fork or clone this repository
-     * Create a new heroku app
-     * Set the buildpacks to Python and NodeJS in that order
-     * Link the heroku app to the repository
-     * Click on Deploy 
-
-   * Steps for manual deployment:
+   * Steps for deployment:
      * Create the env.py file, requirements.txt file and Procfile in the github for the
        project you want to deploy
      * Make it sure, you dont leave any empty newline in the Procfile
@@ -202,14 +192,15 @@
        and also copy and paste that secret key in env.py file of your project
      * After all this done, click on the deploy tab and connect your repository you want to 
        deploy with the heroku and click on the deploy branch
-     * Thats it, you are good to go, your project has been deployed, you can see your project
+     * Your project has been deployed now and you can see your project
        clicking on the open app button.
 
   [Back to top](#)
 # Credits
  ## Content
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
-   * Few codes were also learnt from [codemy.com](https://codemy.com/)
+   * Few codes were also learnt from [Codemy.com](https://codemy.com/)
+   * Few codes were taken from [Stack Overflow](https://stackoverflow.com/)
 
  ## Media
    * Cloudinary is used in this project for images purposes.
