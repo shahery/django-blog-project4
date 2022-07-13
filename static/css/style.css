@@ -179,14 +179,12 @@ body {
 
 }
 
-.fa-linkedin {
-    color: #0A66C2;
-    overflow: hidden !important;
-    font-size: x-large !important;
-
-}
-
 .cat-back {
     margin-left: 15px;
 
+}
+
+img{
+    width: 100%;
+    height: auto;
 }

@@ -14,7 +14,9 @@
                     {% csrf_token %}
                     <strong>This will delete the post of category <br><span class="red-o">{{ post.category}}</span></strong><br>
                     <strong>Are you sure!<br>You want to delete the post?</strong><br><br>
-                    <button class="btn btn-signup">Delete Post!</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+                    <button class="btn btn-signup">Delete Post!</button>
+                    <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+                </form>
             </div>
         </div>
     {% else %}

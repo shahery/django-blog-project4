@@ -12,7 +12,9 @@
             {% csrf_token %}
             {{ form.media }}
             {{ form.as_p }}
-            <button class="btn btn-signup">Post</button> <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+            <button class="btn btn-signup">Post</button>
+            <a href="{% url 'home' %}" class="btn btn-signup">Back</a>
+        </form>
     </div>
 </div>
 <br>

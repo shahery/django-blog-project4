@@ -11,9 +11,9 @@
             <div class="image-container">
                 {% if "placeholder" in post.featured_image.url %}
                 <img class="card-img-top"
-                    src="https://media.nature.com/lw800/magazine-assets/d41586-019-00653-5/d41586-019-00653-5_16459152.jpg">
+                    src="https://media.nature.com/lw800/magazine-assets/d41586-019-00653-5/d41586-019-00653-5_16459152.jpg" alt="default image">
                 {% else %}
-                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                <img class="card-img-top" alt="post image" src=" {{ post.featured_image.url }}">
                 {% endif %}
                 <div class="image-flash">
                     <p class="author">Author: {{ post.author }}</p>
@@ -35,9 +35,9 @@
     </div>
 </div>
 {% if forloop.counter|divisibleby:1 %}
-</div>
-<div class="row">
+<!-- </div>
+<div class="row"> -->
 {% endif %}
 {% endfor %}
 <p class="cat-back"><a href="{% url 'home' %}" class="btn btn-signup">Back</a></p>
-{%endblock%}
+{% endblock %}
