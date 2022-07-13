@@ -99,9 +99,8 @@
   * Site pagination:
     * Site is paginated for 10 posts at one page when posts will be more than 10, it will display on the next page.
   * Footer:
-    * Footer displays the social links and purpose of post.
-      ![pic17](https://user-images.githubusercontent.com/95220937/178115076-2f020272-6143-49fb-870f-a79223d43f21.png)
-
+    * Footer displays the social link and purpose of post.
+      ![footer](https://user-images.githubusercontent.com/95220937/178717236-931bd07e-13ce-4d01-9bf3-bd333a8df6f7.png)
    [Back to top](#)
 
 # Technology Used 
@@ -137,7 +136,19 @@
 
  ## Validator Testing
    * PEP8
-     * No errors were returned from [PEP8 checker](http://pep8online.com/)    
+     * No errors were returned from [PEP8 checker](http://pep8online.com/)
+   * Html checker:
+     * No errors were returned from [W3C Html](https://validator.w3.org/)
+   * CSS checker:
+     * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+   * JS checker:
+     * No errors were returned from [JS HINT](https://jshint.com/)
+
+   * Accessiblity:
+     * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
+     in devtools.
+     * Generated report is here below
+     ![lighthouse report](https://user-images.githubusercontent.com/95220937/178773443-051aafeb-82ff-4a27-895f-ae64a095830c.png)  
 
    [Back to top](#)
 
