@@ -100,7 +100,6 @@ class AddCategoryView(generic.CreateView):
     model = Category
     form_class = CategoryForm
     template_name = 'add_category.html'
-    # fields = '__all__'
 
 
 def CategoryView(request, cats):

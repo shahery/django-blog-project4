@@ -34,7 +34,6 @@ class PostForm(forms.ModelForm):
             'author': forms.TextInput(attrs={'class': 'form-control',
                                              'value': '', 'id': 'elder',
                                              'type': 'hidden'}),
-            # 'author': forms.Select(attrs={'class': 'form-control'}),
             'category': forms.Select
             (choices=cat_list, attrs={'class': 'form-control',
              'placeholder': 'Choose or select category'}),
