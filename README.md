@@ -45,7 +45,7 @@
   * Read the category postblog:
     * Users can read the category post by clicking on the categories dropdown link showing
       on the navbar.
-      ![pic4](https://user-images.githubusercontent.com/95220937/178114876-34f59cbe-f780-4f8b-85d5-a204c154b0d3.png)
+      ![read categorypost](https://user-images.githubusercontent.com/95220937/178968903-4e3fc6f4-ef9c-4ace-9fce-cd8b1add8045.png)
   * Sign Up:
     * Users can register their account by clicking on the sign up button showing
       on the navbar.
@@ -76,10 +76,10 @@
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the
       image of the post.
-      ![pic3](https://user-images.githubusercontent.com/95220937/178114802-3ee61823-a93f-4495-9b31-c9fe5f0e55da.png)
+      ![read](https://user-images.githubusercontent.com/95220937/178967964-6779e457-7557-4d4b-9f8d-0cf8212f8263.png)
   * Like the post:
     * Users can like the post by clicking on the icon of thumbs up.
-     ![pic16](https://user-images.githubusercontent.com/95220937/178115174-7f189379-7c2d-45d8-b334-c7aea5e82ae9.png)
+     ![like](https://user-images.githubusercontent.com/95220937/178968110-b3e56f2b-1364-48fb-99f8-1ba312478c47.png)
   * Comment on the post:
     * Users can comment on the post by writing in the body field showing.
     ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)

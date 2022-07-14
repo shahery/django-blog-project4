@@ -102,7 +102,7 @@ class AddCategoryView(generic.CreateView):
     template_name = 'add_category.html'
 
 
-def CategoryView(request, cats):
+def category_view(request, cats):
     category_posts = Post.objects.filter(category=cats)
     return render(request, 'categories.html', {'cats': cats.title(),
                   'category_posts': category_posts})
