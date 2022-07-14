@@ -85,9 +85,6 @@ body {
     height: 100%;
     width: 100%;
     background: #2a4878;
-    -webkit-transform: skew(30deg);
-    -moz-transform: skew(30deg);
-    transform: skew(30deg);
     z-index: 100;
 
 }

@@ -35,9 +35,8 @@
     </div>
 </div>
 {% if forloop.counter|divisibleby:1 %}
-<!-- </div>
-<div class="row"> -->
 {% endif %}
 {% endfor %}
+<br>
 <p class="cat-back"><a href="{% url 'home' %}" class="btn btn-signup">Back</a></p>
 {% endblock %}
