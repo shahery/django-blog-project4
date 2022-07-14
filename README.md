@@ -7,7 +7,7 @@
   
 
 
-  The deployed link can be found here: 
+  The deployed link can be found here: [Live Site](https://blogweb786.herokuapp.com/)
 
 # Table of contents
   * [Users stories](#users-stories)

@@ -35,6 +35,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['blogweb786.herokuapp.com', 'localhost']
 
+AWS_QUERYSTRING_AUTH = False
 
 # Application definition
 
