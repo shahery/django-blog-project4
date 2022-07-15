@@ -2,8 +2,8 @@
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
 from django import forms
-from .models import Comment, Post, Category
 from django_summernote.widgets import SummernoteWidget
+from .models import Comment, Post, Category
 
 
 cats = Category.objects.all().values_list('name', 'name')

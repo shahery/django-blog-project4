@@ -29,11 +29,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-# AWS_QUERYSTRING_AUTH = False
 
 ALLOWED_HOSTS = ['blogweb786.herokuapp.com', 'localhost']
 
@@ -55,7 +54,6 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'blog',
-    'ckeditor',
     'django_extensions',
 ]
 
