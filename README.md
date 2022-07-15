@@ -71,8 +71,8 @@
       * You can also upload the image using the upload image field for your post.
       * If users don't upload the image for their post, then default image will be
         shown for their post.
-        ![addpost](https://user-images.githubusercontent.com/95220937/178517439-23e226e7-5db6-4a7e-a854-edcaf5584efb.png)
-        ![pic12](https://user-images.githubusercontent.com/95220937/178114768-fd5cf1d1-4ecb-424e-9095-3904b9f442a9.png)
+        ![add1](https://user-images.githubusercontent.com/95220937/179205421-234049fc-4d52-46dd-9de6-071699fd4031.png)
+        ![add](https://user-images.githubusercontent.com/95220937/179204854-ab7437ac-c51a-40e3-8b22-e8f4251a3686.png)
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the
       image of the post.
@@ -86,8 +86,8 @@
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
       the image of the post.
-      ![pic13](https://user-images.githubusercontent.com/95220937/178114930-3b96ec0b-013c-4041-8469-ffcd8320f339.png)
-      ![pic14](https://user-images.githubusercontent.com/95220937/178114952-785cf8b7-5768-4857-b7fa-9daf737fe819.png)
+      ![edit1](https://user-images.githubusercontent.com/95220937/179205564-7435f9db-76e1-4bd7-9f04-60c115c458d4.png)
+      ![edit](https://user-images.githubusercontent.com/95220937/179205062-6e8865ea-bd78-4768-8f6c-c2dea4a45c69.png)
   * Delete the post:
     * Users can delete the post by clicking on the delete button showing below the
       image of the post.
