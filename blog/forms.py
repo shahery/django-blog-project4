@@ -3,6 +3,7 @@
 # pylint: disable=missing-function-docstring
 from django import forms
 from .models import Comment, Post, Category
+from django_summernote.widgets import SummernoteWidget
 
 
 cats = Category.objects.all().values_list('name', 'name')
@@ -37,7 +38,7 @@ class PostForm(forms.ModelForm):
             'category': forms.Select
             (choices=cat_list, attrs={'class': 'form-control',
              'placeholder': 'Choose or select category'}),
-            'content': forms.Textarea(attrs={'class': 'form-control'}),
+            'content': SummernoteWidget(),
 
         }
 
@@ -53,7 +54,7 @@ class EditForm(forms.ModelForm):
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
             'category': forms.Select(choices=cat_list, attrs={'class':
                                      'form-control'}),
-            'content': forms.Textarea(attrs={'class': 'form-control'}),
+            'content': SummernoteWidget(),
         }
 
 

@@ -12,7 +12,7 @@
             <div class="form-group">
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form.media }}
+                    {{ content|safe }}
                     {{ form.as_p }}
                     <button class="btn btn-signup">Update</button>
                     <a href="{% url 'home' %}" class="btn btn-signup">Back</a>

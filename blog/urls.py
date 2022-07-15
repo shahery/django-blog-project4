@@ -1,7 +1,7 @@
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
-from django.urls import path
+from django.urls import path, include
 from . import views
 from .views import AddPostView, EditPostView, DeletePostView
 from .views import AddCategoryView, category_view
@@ -16,4 +16,5 @@ urlpatterns = [
     path('post/<slug:slug>/remove', DeletePostView.as_view(),
          name='delete_post'),
     path('category/<str:cats>/', category_view, name='category'),
+    path('summernote/', include('django_summernote.urls')),
 ]
