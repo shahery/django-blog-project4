@@ -5,6 +5,7 @@ from django import forms
 from django_summernote.widgets import SummernoteWidget
 from .models import Comment, Post, Category
 
+
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
