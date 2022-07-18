@@ -2,8 +2,8 @@
 
 {% block content %}
 
-<h1 class="cat-back"> {{ cats }} </h1>
-
+<br>
+{% if category_posts|length > 0 %}
 {% for post in category_posts %}
 <div class="col-md-5">
     <div class="card mb-5">
@@ -37,6 +37,10 @@
 {% if forloop.counter|divisibleby:1 %}
 {% endif %}
 {% endfor %}
+{% else %}
+<br>
+<h3 class="cat-back">No post for this category available!</h3>
+{% endif %}
 <br>
 <p class="cat-back"><a href="{% url 'home' %}" class="btn btn-signup">Back</a></p>
 {% endblock %}

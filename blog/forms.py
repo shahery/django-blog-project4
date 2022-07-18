@@ -5,15 +5,6 @@ from django import forms
 from django_summernote.widgets import SummernoteWidget
 from .models import Comment, Post, Category
 
-
-cats = Category.objects.all().values_list('name', 'name')
-
-cat_list = []
-
-for item in cats:
-    cat_list.append(item)
-
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
@@ -35,9 +26,7 @@ class PostForm(forms.ModelForm):
             'author': forms.TextInput(attrs={'class': 'form-control',
                                              'value': '', 'id': 'elder',
                                              'type': 'hidden'}),
-            'category': forms.Select
-            (choices=cat_list, attrs={'class': 'form-control',
-             'placeholder': 'Choose or select category'}),
+            'category': forms.Select(attrs={'class': 'form-control'}),
             'content': SummernoteWidget(),
 
         }
@@ -52,8 +41,7 @@ class EditForm(forms.ModelForm):
             'title': forms.TextInput(attrs={'class': 'form-control',
                                      'placeholder': 'Title Placeholder Area'}),
             'slug': forms.TextInput(attrs={'class': 'form-control'}),
-            'category': forms.Select(choices=cat_list, attrs={'class':
-                                     'form-control'}),
+            'category': forms.Select(attrs={'class': 'form-control'}),
             'content': SummernoteWidget(),
         }
 
