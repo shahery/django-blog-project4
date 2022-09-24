@@ -134,12 +134,27 @@
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
+
+       ![blog-views](https://user-images.githubusercontent.com/95220937/192090690-a6107b0f-682c-400c-964e-c2eed3afc084.png)
+
+       [blog-test-models](https://user-images.githubusercontent.com/95220937/192090743-7d8b4cd2-aa3e-4ef1-96a7-7409a657680f.png), [blog-test-views](https://user-images.githubusercontent.com/95220937/192090744-61b69697-5015-4296-8c74-ce9f38ac3c39.png), [blog-urls](https://user-images.githubusercontent.com/95220937/192090746-9508f15b-36f4-4e3d-9f62-5c884940bcd8.png), [blog-models](https://user-images.githubusercontent.com/95220937/192090806-2ac27262-2592-4472-a754-2f5c50d71b9e.png), [blog-test-forms](https://user-images.githubusercontent.com/95220937/192090807-d86e2345-0184-4246-93d3-b05459613307.png), [blog-admin](https://user-images.githubusercontent.com/95220937/192090844-95663ca7-fb9f-47c9-9dd3-40417cd80581.png), [blog-apps](https://user-images.githubusercontent.com/95220937/192090845-d8930cbb-6881-4535-b3ae-2afe279081c9.png), [blog-forms](https://user-images.githubusercontent.com/95220937/192090846-4aa22320-2303-420e-b2d7-03df02af9b58.png), [blogweb-wsgi](https://user-images.githubusercontent.com/95220937/192090912-1e7088bd-6c9a-40a3-b99f-36da26a5bd4b.png), [blogweb-urls](https://user-images.githubusercontent.com/95220937/192090914-51511ec7-d14e-4fd1-a6df-55577de0ddd8.png), [blogweb-asgi](https://user-images.githubusercontent.com/95220937/192090915-09d451dd-5d5d-40fe-b969-04402f86789c.png)
    * Html checker:
      * No errors were returned from [W3C Html](https://validator.w3.org/)
+
+       ![home](https://user-images.githubusercontent.com/95220937/192063473-431a7ab5-f96f-4028-ab5a-6182de3466a5.png)
+
+       [Add-category](https://user-images.githubusercontent.com/95220937/192063569-60df50f3-6871-4c72-b868-ff532ac05572.png), [Post-detail](https://user-images.githubusercontent.com/95220937/192063571-d05cbf03-e19d-49d3-b21b-0741e39ce086.png), [Signup](https://user-images.githubusercontent.com/95220937/192063573-f3229377-7ce0-48a4-92d4-21456c1bd7e2.png), [Sign-in](https://user-images.githubusercontent.com/95220937/192063773-2990d71e-7e39-44ce-a611-07e5f22b6379.png), [Categories-page](https://user-images.githubusercontent.com/95220937/192063769-74b894c2-a0d8-4bef-b8d3-1280be1be066.png), [Delete-post](https://user-images.githubusercontent.com/95220937/192063767-d5aad0fa-17eb-4429-ac8f-dab5bea9a5e6.png)
+
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
+
+       ![css-check](https://user-images.githubusercontent.com/95220937/192064149-c809b0af-a68e-45fd-b38d-4060eb2db801.png)
    * JS checker:
      * No errors were returned from [JS HINT](https://jshint.com/)
+      
+       ![Timeout](https://user-images.githubusercontent.com/95220937/192065319-56e2a796-dce2-42cf-951b-e4d129315947.png)
+
+       [js-1](https://user-images.githubusercontent.com/95220937/192065387-f5fd7f0c-3683-41d4-a3df-88022bbbecb7.png),  [js-2](https://user-images.githubusercontent.com/95220937/192065388-7440c96b-039f-438c-b295-2e6503d510fe.png)
 
    * Accessiblity:
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
@@ -150,16 +165,16 @@
    [Back to top](#)
 
   ## Bugs
-   ### solved bugs
-    * While creating the project I faced the bug of relation does not exist error, which actually took a lot of my time to solve. It was actually the migrations error because I accidentally deleted some migrations in my project.
-    * Steps I took to solve:
-      * Firstly, I deleted all the migrations in my apps except __init__.py file
-      * Then I deleted the db.sqlite3 file showing in the files
-      * Because the database I was using connected with heroku so I had to reset the database in the heroku platform and also I deleted the heroku postgres and added the new one and also added the new DATABASE_URL in the env.py file
-      * Then I commented out the admin.py, forms.py, models.py, views.py, urls.py files and also one line in the urls of blogweb in which blog app was connected
-      * Then I ran the command python3 manage.py makemigrations and python3 manage.py migrate
-      * After that I uncommented the models.py file and ran the commands python3 manage.py makemigrations blog and python3 manage.py migrate blog for my models
-      * And finally I uncommented all the files which I commented out before and ran the server using the command python3 manage.py runserver and the bug was fixed in this way.
+    ### solved bugs
+      * While creating the project I faced the bug of relation does not exist error, which actually took a lot of my time to solve. It was actually the migrations error because I accidentally deleted some migrations in my project.
+      * Steps I took to solve:
+          * Firstly, I deleted all the migrations in my apps except __init__.py file
+          * Then I deleted the db.sqlite3 file showing in the files
+          * Because the database I was using connected with heroku so I had to reset the database in the heroku platform and also I deleted the heroku postgres and added the new one and also added the new DATABASE_URL in the env.py file 
+          * Then I commented out the admin.py, forms.py, models.py, views.py, urls.py files and also one line in the urls of  blogweb in which blog app was connected
+          * Then I ran the command python3 manage.py makemigrations and python3 manage.py migrate
+          * After that I uncommented the models.py file and ran the commands python3 manage.py makemigrations blog and python3 manage.py migrate blog for my models
+          * And finally I uncommented all the files which I commented out before and ran the server using the command python3 manage.py runserver and the bug was fixed in this way.
 
  ## Unfixed Bugs
    * No unfixed bugs.
