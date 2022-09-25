@@ -11,6 +11,7 @@
 
 # Table of contents
   * [Users stories](#users-stories)
+  * [Wireframes](#wireframes)
   * [Existing Features](#existing-features)
   * [Technology Used](#technology-used)
   * [Agile Technique](#agile-technique)
@@ -34,6 +35,47 @@
  												
 
   [Back to top](#)
+
+# Wireframes:
+  Wireframes were created for the project for the purpose of ux planning and designing of the website.
+  
+  * Home page desktop:
+
+    ![Home-desktop](https://user-images.githubusercontent.com/95220937/192149656-74303519-e724-40f9-9696-724d365ecb19.png)
+
+  * Home page mobile:
+
+    ![Home-page-mobile](https://user-images.githubusercontent.com/95220937/192149712-a23df7eb-d310-4083-ad7f-1d5cdf7082d1.png)
+
+  * Post detail page:
+
+    ![Post-detail-page](https://user-images.githubusercontent.com/95220937/192149867-73874a37-8611-4f05-83f8-fe2599e4688b.png)
+
+  * Add post page:
+
+    ![Add-post](https://user-images.githubusercontent.com/95220937/192149865-984f93ba-3a18-462c-bbe0-c7de725c9b81.png)
+
+  * Add category page:
+
+    <img width="702" alt="Add-category-page" src="https://user-images.githubusercontent.com/95220937/192149866-012f3552-5d38-4e24-bae5-8086e6928268.png">
+
+  * Edit post page:
+
+    ![Edit-post](https://user-images.githubusercontent.com/95220937/192149969-caf17bf0-8750-4bf3-b21c-f14564c606f7.png)
+
+  * Sign up page:
+
+    ![Sign-Up](https://user-images.githubusercontent.com/95220937/192149968-5291a44d-b89c-4d9b-93e0-a9aa1e6f3fe0.png)
+
+  * Sign in page:
+
+    ![Sign-In](https://user-images.githubusercontent.com/95220937/192150042-465f49a2-29cf-4af8-8b62-7314c6108edb.png)
+
+  * Delete post page:
+
+    ![Delete-post-page](https://user-images.githubusercontent.com/95220937/192150041-d8b33406-2b19-40ef-8282-bfd0fe789124.png)
+
+    [Back to top](#)
 
 # Existing Features
   * Navbar:
