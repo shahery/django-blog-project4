@@ -41,7 +41,7 @@
   
   * Home page desktop:
 
-    ![Home-desktop](https://user-images.githubusercontent.com/95220937/192149656-74303519-e724-40f9-9696-724d365ecb19.png)
+    ![Home-page-desktop](https://user-images.githubusercontent.com/95220937/192646130-9ec6ec8e-6627-45f7-8f7a-a19e8bc4d2a1.png)
 
   * Home page mobile:
 
@@ -49,31 +49,31 @@
 
   * Post detail page:
 
-    ![Post-detail-page](https://user-images.githubusercontent.com/95220937/192149867-73874a37-8611-4f05-83f8-fe2599e4688b.png)
+    ![Post-detail-page](https://user-images.githubusercontent.com/95220937/192646135-d247fa7e-cf4a-4a80-8fa8-a1fb55f2ef30.png)
 
   * Add post page:
 
-    ![Add-post](https://user-images.githubusercontent.com/95220937/192149865-984f93ba-3a18-462c-bbe0-c7de725c9b81.png)
+    ![Add-post-page](https://user-images.githubusercontent.com/95220937/192646532-dd8ad193-9f6d-4071-987b-4c5c44f1e3c6.png)
 
   * Add category page:
 
-    <img width="702" alt="Add-category-page" src="https://user-images.githubusercontent.com/95220937/192149866-012f3552-5d38-4e24-bae5-8086e6928268.png">
+    ![Add-category-page](https://user-images.githubusercontent.com/95220937/192646139-e7880de4-9d2a-4b34-b241-7252b23dcef7.png)
 
   * Edit post page:
 
-    ![Edit-post](https://user-images.githubusercontent.com/95220937/192149969-caf17bf0-8750-4bf3-b21c-f14564c606f7.png)
+    ![Edit-post-page](https://user-images.githubusercontent.com/95220937/192646820-c630c5e4-e0a3-474a-9df6-ef29420716ff.png)
 
   * Sign up page:
 
-    ![Sign-Up](https://user-images.githubusercontent.com/95220937/192149968-5291a44d-b89c-4d9b-93e0-a9aa1e6f3fe0.png)
+    ![Sign-up-page](https://user-images.githubusercontent.com/95220937/192646530-612d8ccc-5654-48f5-93c2-b1cc2ff49d39.png)
 
   * Sign in page:
 
-    ![Sign-In](https://user-images.githubusercontent.com/95220937/192150042-465f49a2-29cf-4af8-8b62-7314c6108edb.png)
+    ![Login-page](https://user-images.githubusercontent.com/95220937/192646822-f97a023c-4cab-4e25-af12-337755cd65df.png)
 
   * Delete post page:
 
-    ![Delete-post-page](https://user-images.githubusercontent.com/95220937/192150041-d8b33406-2b19-40ef-8282-bfd0fe789124.png)
+    ![Delete-post-page](https://user-images.githubusercontent.com/95220937/192646506-2dbe91b2-05ce-47e9-9842-6653f06ebf49.png)
 
     [Back to top](#)
 
@@ -160,6 +160,21 @@
 # Agile Technique:
   * Agile technique is used in this project. You can have a look here
     [Agile](https://github.com/users/shahery/projects/4) 
+
+  * Kanban board was used in this project to handle user stories.
+
+    ![Kanban-board](https://user-images.githubusercontent.com/95220937/192648324-20ec45ad-93c6-4d84-bbf1-0ca55d2c496a.png)
+
+  * User stories were created for following the agile technique
+
+  * MOSCOW method was used to prioritize the task using the label of MustHave, ShouldHave, CouldHave and WontHave.
+
+    ![moscow1](https://user-images.githubusercontent.com/95220937/192648976-f62fa0bc-c126-413a-94b2-435528745fc6.png)
+    ![moscow2](https://user-images.githubusercontent.com/95220937/192648989-b908e76c-4000-4d57-b999-8a4d27b12586.png)
+
+  * Milestones were created for the project to complete the tasks.
+
+    ![Milestones](https://user-images.githubusercontent.com/95220937/192647997-13c21095-9ea6-4c82-a45e-8bf528381ffe.png)
 
  ## Features left to implement
   * I will add the user profile with image upload option in the future for the users who create 
