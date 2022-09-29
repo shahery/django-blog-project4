@@ -5,6 +5,8 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
+from django.contrib import messages
+from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
 from .models import Post, Category
 from .forms import CommentForm, PostForm, EditForm, CategoryForm
@@ -53,7 +55,7 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-
+    
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
@@ -61,6 +63,9 @@ class PostDetail(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            messages.success(
+                request,
+                'Success! Your comment has been submitted.')
         else:
             comment_form = CommentForm()
 
@@ -84,22 +89,30 @@ class PostLike(View):
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
+            messages.success(
+                request,
+                'Success! You unliked the post.')
         else:
             post.likes.add(request.user)
+            messages.success(
+                request,
+                'Success! You liked the post.')
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class AddPostView(generic.CreateView):
+class AddPostView(SuccessMessageMixin, generic.CreateView):
     model = Post
     form_class = PostForm
     template_name = 'create_post.html'
+    success_message = "Post has been created successfully"
 
 
-class AddCategoryView(generic.CreateView):
+class AddCategoryView(SuccessMessageMixin, generic.CreateView):
     model = Category
     form_class = CategoryForm
     template_name = 'add_category.html'
+    success_message = "Category has been added successfully"
 
 
 def category_view(request, cats):
@@ -108,13 +121,16 @@ def category_view(request, cats):
                   'category_posts': category_posts})
 
 
-class EditPostView(UpdateView):
+class EditPostView(SuccessMessageMixin, UpdateView):
     model = Post
     form_class = EditForm
     template_name = 'edit_post.html'
+    success_message = "Post has been updated successfully"
 
 
-class DeletePostView(DeleteView):
+class DeletePostView(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
-    success_url = reverse_lazy('home')
+    def get_success_url(self):
+        messages.success(self.request, "Post has been deleted successfully")
+        return reverse_lazy('home')
