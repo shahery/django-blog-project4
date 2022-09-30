@@ -166,7 +166,7 @@
 
 # Agile Technique:
   * Agile technique is used in this project. You can have a look here
-    [Agile](https://github.com/users/shahery/projects/4) 
+    [Agile](https://github.com/users/shahery/projects/10/views/1) 
 
   * Kanban board was used in this project to handle user stories.
 
