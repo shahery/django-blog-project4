@@ -18,7 +18,7 @@
   * [Features left to implement](#features-left-to-implement)
   * [Testing](#testing)
   * [Bugs](#bugs)
-  * [Project visualization](#project-visualiztion)
+  * [Project visualization](#project-visualization-diagram)
   * [Colour](#colour)
   * [Deployment](#deployment)
   * [Credits](#credits)
@@ -74,22 +74,27 @@
 
 # Existing Features
   * Navbar:
-    * Users can read the categories, sign up and login using the links showing on the navbar.
-    ![navbar2](https://user-images.githubusercontent.com/95220937/178305659-02981b1a-e294-48c2-8391-fe6757f64e40.png)
+    * Users can read the category blogs by clicking on the category in the dropdown of categories, sign up and login using the links showing on the navbar.
+
+      ![navbar](https://user-images.githubusercontent.com/95220937/193222443-971748e3-6d9f-41f0-8890-886256899c4b.png)
   * After login Navbar:
     * Users can read the categories, add post, add category and logout using the links showing on the navbar.
-    ![navbar1](https://user-images.githubusercontent.com/95220937/178306003-a1296450-fda7-4370-a607-168fadb4bb56.png)
-  * Read the category postblog:
+
+      ![navbar1](https://user-images.githubusercontent.com/95220937/193222449-c4fc8a53-4786-4c6c-8623-6031aaff911f.png)
+  * Read the category blogpost:
     * Users can read the category post by clicking on the categories dropdown link showing
       on the navbar.
-      ![read categorypost](https://user-images.githubusercontent.com/95220937/178968903-4e3fc6f4-ef9c-4ace-9fce-cd8b1add8045.png)
+
+      ![category-post](https://user-images.githubusercontent.com/95220937/193222936-05262768-11fb-41f7-bc1d-ba7a9e3ee122.png)
   * Sign Up:
     * Users can register their account by clicking on the sign up button showing
       on the navbar.
+
       ![pic6](https://user-images.githubusercontent.com/95220937/178114614-83477fe7-537d-48ea-8184-798dffbf5e09.png)
   * Login:
     * Users can login by clicking on the button showing on the navbar next to 
       sign up so that they can enjoy the functionalities of the website.
+
       ![pic7](https://user-images.githubusercontent.com/95220937/178114651-2f843ebf-1064-4074-bc66-4fcec72ffd3f.png)
     * Note:
           Users can only create, edit and delete the post by registering their account
@@ -108,22 +113,27 @@
       * You can also upload the image using the upload image field for your post.
       * If users don't upload the image for their post, then default image will be
         shown for their post.
-        ![add1](https://user-images.githubusercontent.com/95220937/179205421-234049fc-4d52-46dd-9de6-071699fd4031.png)
+
+        ![add-post1](https://user-images.githubusercontent.com/95220937/193223623-a62906a9-4c8c-46ba-be4e-e9f454335a9a.png)
         ![add](https://user-images.githubusercontent.com/95220937/179204854-ab7437ac-c51a-40e3-8b22-e8f4251a3686.png)
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the
       image of the post.
-      ![read](https://user-images.githubusercontent.com/95220937/178967964-6779e457-7557-4d4b-9f8d-0cf8212f8263.png)
+
+      ![read-post](https://user-images.githubusercontent.com/95220937/193224940-325c4e3c-3c03-4c15-a30b-dac0426a480d.png)
   * Like the post:
     * Users can like the post by clicking on the icon of thumbs up.
-     ![like](https://user-images.githubusercontent.com/95220937/178968110-b3e56f2b-1364-48fb-99f8-1ba312478c47.png)
+
+      ![like](https://user-images.githubusercontent.com/95220937/178968110-b3e56f2b-1364-48fb-99f8-1ba312478c47.png)
   * Comment on the post:
     * Users can comment on the post by writing in the body field showing.
-    ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
+
+      ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
       the image of the post.
-      ![edit1](https://user-images.githubusercontent.com/95220937/179205564-7435f9db-76e1-4bd7-9f04-60c115c458d4.png)
+
+      ![edit-post1](https://user-images.githubusercontent.com/95220937/193224080-3902da3c-3dcf-459e-99b6-e3a7074f85c0.png)
       ![edit](https://user-images.githubusercontent.com/95220937/179205062-6e8865ea-bd78-4768-8f6c-c2dea4a45c69.png)
   * Delete the post:
     * Users can delete the post by clicking on the delete button showing below the
@@ -131,11 +141,13 @@
     * Users cannot delete the others post. If they try to delete the others post
       then a message will be displayed showing "sorry, you are not allowed to 
       delete this post"
+
       ![pic15](https://user-images.githubusercontent.com/95220937/178114998-f78c3cd1-1e72-4874-83ef-0ab155081c59.png)
   * Site pagination:
     * Site is paginated for 10 posts at one page when posts will be more than 10, it will display on the next page.
   * Footer:
     * Footer displays the social link and purpose of post.
+
       ![footer](https://user-images.githubusercontent.com/95220937/178717236-931bd07e-13ce-4d01-9bf3-bd333a8df6f7.png)
    [Back to top](#)
 
