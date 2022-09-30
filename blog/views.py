@@ -1,14 +1,14 @@
 # pylint: disable=missing-module-docstring
 # pylint: disable=missing-class-docstring
 # pylint: disable=missing-function-docstring
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, redirect, get_object_or_404, reverse
 from django.views import generic, View
 from django.views.generic import UpdateView, DeleteView
 from django.http import HttpResponseRedirect
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from .models import Post, Category
+from .models import Post, Category, Comment
 from .forms import CommentForm, PostForm, EditForm, CategoryForm
 
 
@@ -55,7 +55,7 @@ class PostDetail(View):
         liked = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
-    
+
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
@@ -131,6 +131,22 @@ class EditPostView(SuccessMessageMixin, UpdateView):
 class DeletePostView(SuccessMessageMixin, DeleteView):
     model = Post
     template_name = 'delete_post.html'
+
     def get_success_url(self):
         messages.success(self.request, "Post has been deleted successfully")
         return reverse_lazy('home')
+
+
+def delete_post_comment(request, comment_id):
+    '''
+    Deletes the comment from the post
+    '''
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only site admin can delete comments')
+        return redirect(reverse('home'))
+
+    comment = get_object_or_404(Comment, pk=comment_id)
+    comment.delete()
+    messages.success(request, 'Comment has been deleted!')
+
+    return redirect(reverse('home'))

@@ -17,4 +17,8 @@ urlpatterns = [
          name='delete_post'),
     path('category/<str:cats>/', category_view, name='category'),
     path('summernote/', include('django_summernote.urls')),
+    path(
+        'delete_post_comment/<int:comment_id>/',
+        views.delete_post_comment,
+        name='delete_post_comment'),
 ]
