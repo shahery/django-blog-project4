@@ -10,7 +10,7 @@
   The deployed link can be found here: [Live Site](https://blogweb786.herokuapp.com/)
 
 # Table of contents
-  * [Users stories](#users-stories)
+  * [User stories](#user-stories)
   * [Wireframes](#wireframes)
   * [Existing Features](#existing-features)
   * [Technology Used](#technology-used)
@@ -23,15 +23,10 @@
   * [Deployment](#deployment)
   * [Credits](#credits)
 
-# Users stories:
-  * As a user I can read the blogposts
-  * As a user I can select the category to read that kind of posts
-  * As a user I can create the post
-  * As a user I can add the category for the post
-  * As a user I can edit or update the post
-  * As a user I can delete the post
-  * As a user I can like the post
-  * As a user I can comment on the post
+# User stories:
+  User stories were created for the project by keeping in mind the story points and moscow method to complete the website accordingly.
+
+   ![User-stories](https://user-images.githubusercontent.com/95220937/193207666-97896a81-c525-4f2e-8627-00572343aee9.png)
  												
 
   [Back to top](#)
@@ -191,8 +186,10 @@
    * Passed the code through a PEP8 linter and confirmed there are no problems
    * PEP8
      * No errors were returned from [PEP8 checker](http://pep8online.com/)
+     * All the errors were removed from the files to fulfil the requirements of PEP8 and was made sure by checking the errors using the command "python3 -m flake8". Only those few errors were left who creates the problems in the website by adjusting like in env.py file or setting.py etc.
 
        ![blog-views](https://user-images.githubusercontent.com/95220937/192090690-a6107b0f-682c-400c-964e-c2eed3afc084.png)
+       ![Flake8](https://user-images.githubusercontent.com/95220937/193208646-68870d87-42d4-44b8-bbbb-0954c19dd7f0.png)
 
        [blog-test-models](https://user-images.githubusercontent.com/95220937/192090743-7d8b4cd2-aa3e-4ef1-96a7-7409a657680f.png), [blog-test-views](https://user-images.githubusercontent.com/95220937/192090744-61b69697-5015-4296-8c74-ce9f38ac3c39.png), [blog-urls](https://user-images.githubusercontent.com/95220937/192090746-9508f15b-36f4-4e3d-9f62-5c884940bcd8.png), [blog-models](https://user-images.githubusercontent.com/95220937/192090806-2ac27262-2592-4472-a754-2f5c50d71b9e.png), [blog-test-forms](https://user-images.githubusercontent.com/95220937/192090807-d86e2345-0184-4246-93d3-b05459613307.png), [blog-admin](https://user-images.githubusercontent.com/95220937/192090844-95663ca7-fb9f-47c9-9dd3-40417cd80581.png), [blog-apps](https://user-images.githubusercontent.com/95220937/192090845-d8930cbb-6881-4535-b3ae-2afe279081c9.png), [blog-forms](https://user-images.githubusercontent.com/95220937/192090846-4aa22320-2303-420e-b2d7-03df02af9b58.png), [blogweb-wsgi](https://user-images.githubusercontent.com/95220937/192090912-1e7088bd-6c9a-40a3-b99f-36da26a5bd4b.png), [blogweb-urls](https://user-images.githubusercontent.com/95220937/192090914-51511ec7-d14e-4fd1-a6df-55577de0ddd8.png), [blogweb-asgi](https://user-images.githubusercontent.com/95220937/192090915-09d451dd-5d5d-40fe-b969-04402f86789c.png)
    * Html checker:
@@ -221,19 +218,19 @@
 
    [Back to top](#)
 
-  ## Bugs
-    ### solved bugs
-      * While creating the project I faced the bug of relation does not exist error, which actually took a lot of my time to solve. It was actually the migrations error because I accidentally deleted some migrations in my project.
-      * Steps I took to solve:
-          * Firstly, I deleted all the migrations in my apps except __init__.py file
-          * Then I deleted the db.sqlite3 file showing in the files
-          * Because the database I was using connected with heroku so I had to reset the database in the heroku platform and also I deleted the heroku postgres and added the new one and also added the new DATABASE_URL in the env.py file 
-          * Then I commented out the admin.py, forms.py, models.py, views.py, urls.py files and also one line in the urls of  blogweb in which blog app was connected
-          * Then I ran the command python3 manage.py makemigrations and python3 manage.py migrate
-          * After that I uncommented the models.py file and ran the commands python3 manage.py makemigrations blog and python3 manage.py migrate blog for my models
-          * And finally I uncommented all the files which I commented out before and ran the server using the command python3 manage.py runserver and the bug was fixed in this way.
+# Bugs:
+ ## Fixed bugs:
+  * While creating the project I faced the bug of relation does not exist error, which actually took a lot of my time to solve. It was actually the migrations error because I accidentally deleted some migrations in my project.
+  * Steps I took to solve:
+    * Firstly, I deleted all the migrations in my apps except __init__.py file
+    * Then I deleted the db.sqlite3 file showing in the files
+    * Because the database I was using connected with heroku so I had to reset the database in the heroku platform and also I deleted the heroku postgres and added the new one and also added the new DATABASE_URL in the env.py file 
+    * Then I commented out the admin.py, forms.py, models.py, views.py, urls.py files and also one line in the urls of blogweb in which blog app was connected
+    * Then I ran the command python3 manage.py makemigrations and python3 manage.py migrate
+    * After that I uncommented the models.py file and ran the commands python3 manage.py makemigrations blog and python3 manage.py migrate blog for my models
+    * And finally I uncommented all the files which I commented out before and ran the server using the command python3 manage.py runserver and the bug was fixed in this way.
 
- ## Unfixed Bugs
+ ## Unfixed Bugs:
    * No unfixed bugs.
    
    [Back to top](#)
@@ -243,41 +240,60 @@
 
   [Back to top](#)
 
-# Colour
+# Colour:
   * #d85428, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
    of these colours were used in the website for foreground and background.
 
   [Back to top](#)
-# Deployment
- This project was deployed using the code institute's mock terminal for heroku.
-   * Steps for deployment:
-     * Create the env.py file, requirements.txt file and Procfile in the github for the
-       project you want to deploy
-     * Make it sure, you dont leave any empty newline in the Procfile
-     * Create a new heroku app
-     * Click on the resources in the heroku and add heroku postgres database for the project
-     * Heroku postgres will create the database_url in the config vars, just copy that and 
-       paste in the env.py file of your project in the github.
-     * If you are using the cloudinary for your project then you will have to copy
-       the cloudinary_url and paste in the env.py file same like database_url.
-     * In the config vars, you have to create the Port: 8000 and secret key for your project
-       and also copy and paste that secret key in env.py file of your project
-     * After all this done, click on the deploy tab and connect your repository you want to 
-       deploy with the heroku and click on the deploy branch
-     * Your project has been deployed now and you can see your project
-       clicking on the open app button.
+# Deployment:
+ This project was deployed using the code institute's mock terminal for heroku. Following steps were taken for the deployment of the project:
+  * Login to Heroku and Create a New App
+  * Give the App a name, it must be unique and select a region closest to you
+  * Click on 'Create App' and now you can see the project dashboard
+  * Click on the 'Resources' tab and search for 'Heroku Postgres' as this is the add-on you will use for the deployed database
+  * Click on the 'Settings' tab at the top of the page.
+  * Scroll down to 'Config Vars' and click 'Reveal Config Vars'. Here the database URL is stored, it is the connection to the database, so this must be copied and stored within env.py as a root level file. The env.py file is where the project secret environment variables are stored. This file is then added to a .gitignore file so it isn't stored publicly within the project repository.
+  * The secret key needs to be created within the projects env.py file on GitPod and then added to the Config Vars on Heroku. Once added, go to the settings.py file on GitPod.
+  * Within the settings.py file you need to import several libraries:
+    * import os
+    * import dj_database_url
+    * from django.contrib.messages import constants as messages
+    * if os.path.isfile('env.py'):
+      * import env
+  * Then, we need to replace the current insecure secret key with os.environ.get('SECRET_KEY)', that we set within the env.py file.
+  * Once the secret key is replaced, scroll down to DATABASES to connect to the Postgres database. Comment out the current databases and add the following:
+    * DATABASES = { 'default': dj_database_url.parse(os.environ.get('DATABASE_URL')) }
+  * The next step is to connect the project to WhiteNoise, which is where the static files will be stored. You can find a full explanation of how to install WhiteNoise [here](https://whitenoise.evans.io/en/stable/)
+  * Then on Heroku add to the Config Vars, DISABLE_COLLECTSTATIC = 1, as a temporary measure to enable deployment without any static files, this will be removed when it is time to deploy the full project.
+  * Next we need to tell Django where to store the media and static files. Towards the bottom of settings.py file we can add:
+    * STATIC_URL = '/static/'
+    * STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+    * STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    * MEDIA_URL = '/media/'
+  * Then we need to tell Django where the templates will be stored. At the top of settings.py, under BASE_DIR (the base directory), add a templates directory and then scroll down to TEMPLATES and add the templates directory variable to 'DIRS': [].
+  * Now we have to add our Heroku Host Name into allowed hosts in settings.py file:
+    * ALLOWED_HOSTS = ['YOUR-APP-NAME-HERE', 'localhost']
+  * Finally, to complete the first deployment set up of the skeleton app, create a Procfile so that Heroku knows how to run the project. Within this file add the following: web: gunicorn APP-NAME.wsgi Web tells Heroku to allow web traffic, whilst gunicorn is the server installed earlier, a web services gateway interface server (wsgi). This is a standard that allows Python services to integrate with web servers.
+  * Now go to the 'Deploy' Tab on Heroku. Find the 'Deployment Method' section and choose GitHub. Connect to your GitHub account and find the repo you want to deploy.
+  * Scroll down to the Automatic and Manual Deploys sections. Click 'Deploy Branch' in the Manual Deploy section and waited as Heroku installed all dependencies and deployed the code.
+  * Once the project is finished deploying, click 'Open App' to see the newly deployed project.
+  * Before deploying the final draft of your project you must:
+    * Remove DISABLE_COLLECTSTATIC=1 from congifvars within Heroku
+    * Ensure DEBUG is set to false in settings.py file
+
 
   [Back to top](#)
-# Credits
- ## Content
+# Credits:
+ ## Content:
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
    * Few codes were also learnt from [Codemy.com](https://codemy.com/)
    * Few codes were taken from [Stack Overflow](https://stackoverflow.com/)
 
- ## Media
-   * Cloudinary is used in this project for images purposes.
+ ## Media:
+   * [Cloudinary](https://cloudinary.com/) is used in this project for images purposes.
+   * [Font awesome](https://fontawesome.com/) icons were used for the website.
 
- ## Acknowledgements
+ ## Acknowledgements:
    * My mentor who guided me througout the project.
 
  [Back to top](#)
