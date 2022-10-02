@@ -185,14 +185,27 @@ body {
 img{
     width: 100%;
     height: auto;
+
+}
+
+.top-fix {
+    margin-top: 50px !important;
+
+}
+
+.align {
+    margin-right: 75px;
+
 }
 
 .form-group {
     max-width: 100% !important;
+
 }
 
 #id_content_iframe {
     max-width: 100% !important;
+
 }
 
 @media (max-width: 780px) {
@@ -200,4 +213,5 @@ img{
         max-width: 90% !important;
         margin: auto !important;   
     }
+
 }
