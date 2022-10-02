@@ -76,30 +76,38 @@
   * Navbar:
     * Users can read the category blogs by clicking on the category in the dropdown of categories, sign up and login using the links showing on the navbar.
 
-      ![navbar](https://user-images.githubusercontent.com/95220937/193222443-971748e3-6d9f-41f0-8890-886256899c4b.png)
+      ![navbar1](https://user-images.githubusercontent.com/95220937/193478681-8e7b9c32-f0a2-4c16-82cd-f064b6d00182.png)
   * After login Navbar:
     * Users can read the categories, add post, add category and logout using the links showing on the navbar.
 
-      ![navbar1](https://user-images.githubusercontent.com/95220937/193222449-c4fc8a53-4786-4c6c-8623-6031aaff911f.png)
+      ![navbar2](https://user-images.githubusercontent.com/95220937/193478682-a1e40e0e-280c-41ae-b5e1-35866c88affe.png)
   * Read the category blogpost:
     * Users can read the category post by clicking on the categories dropdown link showing
       on the navbar.
 
-      ![category-post](https://user-images.githubusercontent.com/95220937/193222936-05262768-11fb-41f7-bc1d-ba7a9e3ee122.png)
+      ![category-post](https://user-images.githubusercontent.com/95220937/193479296-1e2f918e-1230-4e99-8784-0e027b80d5cb.png)
+  * Add category:
+    * Users can add the category through the form below to create the desired category posts.
+
+      ![Add-category](https://user-images.githubusercontent.com/95220937/193478800-0b2c1c45-038f-49aa-981f-840218ca8acf.png)
   * Sign Up:
     * Users can register their account by clicking on the sign up button showing
       on the navbar.
 
-      ![pic6](https://user-images.githubusercontent.com/95220937/178114614-83477fe7-537d-48ea-8184-798dffbf5e09.png)
+      ![sign-up](https://user-images.githubusercontent.com/95220937/193479218-bcb31a26-d450-4932-a2cd-995b8a4399d1.png)
   * Login:
     * Users can login by clicking on the button showing on the navbar next to 
       sign up so that they can enjoy the functionalities of the website.
 
-      ![pic7](https://user-images.githubusercontent.com/95220937/178114651-2f843ebf-1064-4074-bc66-4fcec72ffd3f.png)
+      ![sign-in](https://user-images.githubusercontent.com/95220937/193479219-b163f1a9-f5e8-442f-9b2b-ee3f9b683e42.png)
     * Note:
           Users can only create, edit and delete the post by registering their account
           on the website.
-       
+  * Logout:
+    * Users logout/sigout page should look like the image below:
+
+      ![logout](https://user-images.githubusercontent.com/95220937/193478799-e1d40c04-6bc5-437a-a054-5f75c32c00f6.png)
+ 
   * Add the post:
     * Users can create the posts along with uploading images
     * steps to create the posts are as below
@@ -114,27 +122,27 @@
       * If users don't upload the image for their post, then default image will be
         shown for their post.
 
-        ![add-post1](https://user-images.githubusercontent.com/95220937/193223623-a62906a9-4c8c-46ba-be4e-e9f454335a9a.png)
-        ![add](https://user-images.githubusercontent.com/95220937/179204854-ab7437ac-c51a-40e3-8b22-e8f4251a3686.png)
+        ![Add-post1](https://user-images.githubusercontent.com/95220937/193478749-aeb14594-f83c-4107-ac2c-13ef4598c337.png)
+        ![Add-post2](https://user-images.githubusercontent.com/95220937/193478747-5e28878e-5fbd-4713-b14d-4ba8e20e8660.png)
   * Read the post:
     * Users can read the postblog by clicking on the title link showing below the
       image of the post.
 
-      ![read-post](https://user-images.githubusercontent.com/95220937/193224940-325c4e3c-3c03-4c15-a30b-dac0426a480d.png)
+      ![read-post](https://user-images.githubusercontent.com/95220937/193479061-095e0171-0755-4721-af32-99ff5b895c31.png)
   * Like the post:
     * Users can like the post by clicking on the icon of thumbs up.
 
-      ![like](https://user-images.githubusercontent.com/95220937/178968110-b3e56f2b-1364-48fb-99f8-1ba312478c47.png)
+      ![like-post](https://user-images.githubusercontent.com/95220937/193479059-e3aa2539-b434-4205-bafe-bcf817c48823.png)
   * Comment on the post:
     * Users can comment on the post by writing in the body field showing.
 
-      ![pic10](https://user-images.githubusercontent.com/95220937/178115272-a8a26f05-54f6-4d5b-a3f6-d034d46fa6cc.png)
+      ![comment-post](https://user-images.githubusercontent.com/95220937/193479058-033a0203-3925-42e5-b07b-febf98f0966d.png)
   * Edit or Update the post:
     * Users can edit or update the post by clicking on the edit button showing below 
       the image of the post.
 
-      ![edit-post1](https://user-images.githubusercontent.com/95220937/193224080-3902da3c-3dcf-459e-99b6-e3a7074f85c0.png)
-      ![edit](https://user-images.githubusercontent.com/95220937/179205062-6e8865ea-bd78-4768-8f6c-c2dea4a45c69.png)
+      ![edit-post1](https://user-images.githubusercontent.com/95220937/193479134-51b2c611-8043-40e7-b2fd-f0abd74f60aa.png)
+      ![edit-post2](https://user-images.githubusercontent.com/95220937/193479131-51687bb2-adbe-4197-8573-3c55367eb97e.png)
   * Delete the post:
     * Users can delete the post by clicking on the delete button showing below the
       image of the post.
@@ -142,13 +150,14 @@
       then a message will be displayed showing "sorry, you are not allowed to 
       delete this post"
 
-      ![pic15](https://user-images.githubusercontent.com/95220937/178114998-f78c3cd1-1e72-4874-83ef-0ab155081c59.png)
+      ![delete-post](https://user-images.githubusercontent.com/95220937/193479130-eeaecfd1-91dd-44f7-b634-ed1798bc1d85.png)
   * Site pagination:
     * Site is paginated for 10 posts at one page when posts will be more than 10, it will display on the next page.
   * Footer:
     * Footer displays the social link and purpose of post.
 
       ![footer](https://user-images.githubusercontent.com/95220937/178717236-931bd07e-13ce-4d01-9bf3-bd333a8df6f7.png)
+
    [Back to top](#)
 
 # Technology Used 
@@ -253,7 +262,7 @@
   [Back to top](#)
 
 # Colour:
-  * #d85428, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
+  * #d85428, #ffff00, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
    of these colours were used in the website for foreground and background.
 
   [Back to top](#)
