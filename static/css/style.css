@@ -7,17 +7,18 @@ body {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #d85428;
+    color: #ffff00;
 
 }
 
 .red-o {
-    color: #d85428;
+    color: black;
 
 }
 
 .thin {
     font-weight: 300;
+    color: #ffff00;
 
 }
 
@@ -97,7 +98,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: black;
 
 }
 
@@ -114,7 +115,7 @@ body {
 }
 
 .btn-signup {
-    background-color: #eb6134;
+    background-color: black;
     color: #fff;
 
 }
@@ -122,7 +123,7 @@ body {
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #eb6134;
+    color: black;
 
 }
 
@@ -147,7 +148,7 @@ body {
 
 .btn-like:hover,
 .btn-like:active {
-    color: #E84610 !important;
+    color: #2a4878!important;
     background: transparent !important;
     border: none !important;
 
@@ -184,4 +185,19 @@ body {
 img{
     width: 100%;
     height: auto;
+}
+
+.form-group {
+    max-width: 100% !important;
+}
+
+#id_content_iframe {
+    max-width: 100% !important;
+}
+
+@media (max-width: 780px) {
+    .form-fix {
+        max-width: 90% !important;
+        margin: auto !important;   
+    }
 }
