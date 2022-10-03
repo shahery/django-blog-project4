@@ -12,67 +12,102 @@
   The deployed link can be found here: [Live Site](https://blogweb786.herokuapp.com/)
 
 # Table of contents
-  * [User stories](#user-stories)
-  * [Wireframes](#wireframes)
+  * [Ux design](#ux-design)
   * [Existing Features](#existing-features)
   * [Technology Used](#technology-used)
   * [Agile Technique](#agile-technique)
   * [Features left to implement](#features-left-to-implement)
   * [Testing](#testing)
   * [Bugs](#bugs)
-  * [Project visualization](#project-visualization-diagram)
-  * [Colour](#colour)
   * [Deployment](#deployment)
   * [Credits](#credits)
 
-# User stories:
-  User stories were created for the project by keeping in mind the story points and moscow method to complete the website accordingly.
 
-   ![User-stories](https://user-images.githubusercontent.com/95220937/193207666-97896a81-c525-4f2e-8627-00572343aee9.png)
+# Ux design:
+  ## Strategy:
+   * Blogweb is the blogpost website created for the purpose of creating blogposts and share information to the users.
+   The key points while creating this website are following below:
+     * Create an online presence
+     * Interact with users who share information through blogs/posts
+     * Create a category posts/blogs
+     * Create a user friendly environment
+     * Display key information to the users
+     * Attract more users
+     * Quick and intuitive navigation
+     * Easy access to key information
+     * Quick and hassle-free processes
+     * Create entertainment environment
+
+  ## User stories(Scope):
+   * User stories were created for the project by keeping in mind the story points and moscow method to complete the website accordingly.
+
+      ![User-stories](https://user-images.githubusercontent.com/95220937/193207666-97896a81-c525-4f2e-8627-00572343aee9.png)
  												
 
-  [Back to top](#)
-
-# Wireframes:
-  Wireframes were created for the project for the purpose of ux planning and designing of the website.
+  ## Wireframes(Skeleton):
+   * Wireframes were created for the project for the purpose of ux planning and designing of the website.
   
-  * Home page desktop:
+     * Home page desktop:
 
-    ![Home-page-desktop](https://user-images.githubusercontent.com/95220937/192646130-9ec6ec8e-6627-45f7-8f7a-a19e8bc4d2a1.png)
+       ![Home-page-desktop](https://user-images.githubusercontent.com/95220937/192646130-9ec6ec8e-6627-45f7-8f7a-a19e8bc4d2a1.png)
 
-  * Home page mobile:
+     * Home page mobile:
 
-    ![Home-page-mobile](https://user-images.githubusercontent.com/95220937/192149712-a23df7eb-d310-4083-ad7f-1d5cdf7082d1.png)
+       ![Home-page-mobile](https://user-images.githubusercontent.com/95220937/192149712-a23df7eb-d310-4083-ad7f-1d5cdf7082d1.png)
 
-  * Post detail page:
+     * Post detail page:
 
-    ![Post-detail-page](https://user-images.githubusercontent.com/95220937/192646135-d247fa7e-cf4a-4a80-8fa8-a1fb55f2ef30.png)
+       ![Post-detail-page](https://user-images.githubusercontent.com/95220937/192646135-d247fa7e-cf4a-4a80-8fa8-a1fb55f2ef30.png)
 
-  * Add post page:
+     * Add post page:
 
-    ![Add-post-page](https://user-images.githubusercontent.com/95220937/192646532-dd8ad193-9f6d-4071-987b-4c5c44f1e3c6.png)
+       ![Add-post-page](https://user-images.githubusercontent.com/95220937/192646532-dd8ad193-9f6d-4071-987b-4c5c44f1e3c6.png)
 
-  * Add category page:
+     * Add category page:
 
-    ![Add-category-page](https://user-images.githubusercontent.com/95220937/192646139-e7880de4-9d2a-4b34-b241-7252b23dcef7.png)
+       ![Add-category-page](https://user-images.githubusercontent.com/95220937/192646139-e7880de4-9d2a-4b34-b241-7252b23dcef7.png)
 
-  * Edit post page:
+     * Edit post page:
 
-    ![Edit-post-page](https://user-images.githubusercontent.com/95220937/192646820-c630c5e4-e0a3-474a-9df6-ef29420716ff.png)
+       ![Edit-post-page](https://user-images.githubusercontent.com/95220937/192646820-c630c5e4-e0a3-474a-9df6-ef29420716ff.png)
 
-  * Sign up page:
+     * Sign up page:
 
-    ![Sign-up-page](https://user-images.githubusercontent.com/95220937/192646530-612d8ccc-5654-48f5-93c2-b1cc2ff49d39.png)
+       ![Sign-up-page](https://user-images.githubusercontent.com/95220937/192646530-612d8ccc-5654-48f5-93c2-b1cc2ff49d39.png)
 
-  * Sign in page:
+     * Sign in page:
 
-    ![Login-page](https://user-images.githubusercontent.com/95220937/192646822-f97a023c-4cab-4e25-af12-337755cd65df.png)
+       ![Login-page](https://user-images.githubusercontent.com/95220937/192646822-f97a023c-4cab-4e25-af12-337755cd65df.png)
 
-  * Delete post page:
+     * Delete post page:
 
-    ![Delete-post-page](https://user-images.githubusercontent.com/95220937/192646506-2dbe91b2-05ce-47e9-9842-6653f06ebf49.png)
+       ![Delete-post-page](https://user-images.githubusercontent.com/95220937/192646506-2dbe91b2-05ce-47e9-9842-6653f06ebf49.png)
 
-    [Back to top](#)
+  ## Surface:
+   * Colours:
+     * #d85428, #ffff00, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
+      of these colours were used in the website for foreground and background.
+   * Typograpghy:
+     * The fonts chosen for this project were taken from [google fonts](https://fonts.google.com/)
+       * font-family: 'Lato'
+       * font-family: 'Roboto'
+   * Icons:
+     * The icons in the website were all taken from [Font awesome](https://fontawesome.com/)
+   * Images:
+     * [Cloudinary](https://cloudinary.com/) is used in this project for images purposes.
+
+  ## Structure:
+   * Information Architecture:
+     * The navigation for this website was designed to be user-friendly and intuitive. Grouping pages according to relationships and functionality as shown below.
+
+   * Entity Relationship Model(database schema):
+     * The ERM design demonstrates how the information will be stored while the data is at rest. Here we can see one-to-many relationships between the User model and the Comment and/or Post model. The same relationship is established between the Post model and the Comment. The rest of the relationships are derived from Django built-in models such as User, AbstractUser, Session etc.
+
+     ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
+
+
+
+  [Back to top](#)
 
 # Existing Features
   * Navbar:
@@ -265,16 +300,6 @@
    
    [Back to top](#)
 
-# Project visualization diagram:
-  ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
-
-  [Back to top](#)
-
-# Colour:
-  * #d85428, #ffff00, #2a4878, #abbdd9, #a3cfc7, black, #e8e2d8, white, #0A66C2, lightgray, combination 
-   of these colours were used in the website for foreground and background.
-
-  [Back to top](#)
 # Deployment:
  This project was deployed using the code institute's mock terminal for heroku. Following steps were taken for the deployment of the project:
   * Login to Heroku and Create a New App
@@ -318,10 +343,6 @@
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
    * Few codes were also learnt from [Codemy.com](https://codemy.com/)
    * Few codes were taken from [Stack Overflow](https://stackoverflow.com/)
-
- ## Media:
-   * [Cloudinary](https://cloudinary.com/) is used in this project for images purposes.
-   * [Font awesome](https://fontawesome.com/) icons were used for the website.
 
  ## Acknowledgements:
    * My mentor who guided me througout the project.
