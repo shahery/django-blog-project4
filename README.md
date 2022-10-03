@@ -4,6 +4,8 @@
   are a lot of functionalities for the users like, users can create the posts with the images, can 
   add or select the category for the post, read the post, edit or update the post, delete the post,
   can like the post and can leave a comment on the post.
+
+  ![Am-i-responsive](https://user-images.githubusercontent.com/95220937/193538746-044b7f86-16a4-4ebb-8fb8-42625e7662ce.png)
   
 
 
@@ -235,7 +237,14 @@
      * I confirmed that colours and font chosen are easy to read and accessible by running it through lighthouse
      in devtools.
      * Generated report is here below
-     ![lighthouse report](https://user-images.githubusercontent.com/95220937/178773443-051aafeb-82ff-4a27-895f-ae64a095830c.png)  
+     ![Home-desktop](https://user-images.githubusercontent.com/95220937/193547647-6375387e-d9c7-414e-8651-73532adf5f3b.png)  
+
+     * Desktop:
+       * [Add-post-desktop](https://user-images.githubusercontent.com/95220937/193548464-2ab749e2-6fba-46d9-b206-fdbb10feb130.png), [Add-category-desktop](https://user-images.githubusercontent.com/95220937/193548699-162ae308-b06c-49c0-877f-fe9e646d05b2.png), [Sign-out-desktop](https://user-images.githubusercontent.com/95220937/193548843-2de0d226-ea86-4d9e-b7a5-5d9a03ec132b.png), [Category-postblog-desktop](https://user-images.githubusercontent.com/95220937/193549013-4fbce616-60e5-4193-972b-631e0a54a493.png), [edit-post-desktop](https://user-images.githubusercontent.com/95220937/193549189-6a14784d-a78e-4e51-98e6-10fc714aa09b.png), [delete-post-desktop](https://user-images.githubusercontent.com/95220937/193549358-8a4d3f49-5fb3-4bc2-93eb-f9831cfe35ec.png), [Sign-up-desktop](https://user-images.githubusercontent.com/95220937/193549595-20bcb4b6-225e-4276-9f85-863a4c296007.png), [Login-desktop](https://user-images.githubusercontent.com/95220937/193549756-9113c788-bd68-4e40-ad0b-bf457cb4dab0.png)
+
+
+     * Mobile:
+       * [Home-mobile](https://user-images.githubusercontent.com/95220937/193547654-31056df9-b43f-4b62-b7b3-b4365163a077.png), [Add-post-mobile](https://user-images.githubusercontent.com/95220937/193548457-afe94076-bb96-44fd-8a3c-01669584de62.png), [Add-category-mobile](https://user-images.githubusercontent.com/95220937/193548692-acd0e832-4a5c-4d89-80de-9770f9b68365.png), [Sign-out-mobile](https://user-images.githubusercontent.com/95220937/193548841-03e3be4f-2acb-438b-8366-44e47a92de85.png), [Category-postblog-mobile](https://user-images.githubusercontent.com/95220937/193549009-44d4a05d-41ef-40e1-9282-a469c31fd2bf.png), [edit-post-mobile](https://user-images.githubusercontent.com/95220937/193549186-64348763-2343-4fa0-9e84-5465829f120e.png), [delete-post-mobile](https://user-images.githubusercontent.com/95220937/193549361-f848387e-fb66-46b6-99ae-e86956762365.png), [Sign-up-mobile](https://user-images.githubusercontent.com/95220937/193549597-193411d7-aa47-4855-b174-482fb5ca2971.png), [Login-mobile](https://user-images.githubusercontent.com/95220937/193549751-51ed8daa-9ffc-432c-bdcd-7b248f68e945.png)
 
    [Back to top](#)
 
