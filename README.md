@@ -100,10 +100,12 @@
    * Information Architecture:
      * The navigation for this website was designed to be user-friendly and intuitive. Grouping pages according to relationships and functionality as shown below.
 
+       ![Information-Architecture](https://user-images.githubusercontent.com/95220937/193998847-b19a3f1f-dd85-4a95-b7b7-eee424c2d4e1.png)
+
    * Entity Relationship Model(database schema):
      * The ERM design demonstrates how the information will be stored while the data is at rest. Here we can see one-to-many relationships between the User model and the Comment and/or Post model. The same relationship is established between the Post model and the Comment. The rest of the relationships are derived from Django built-in models such as User, AbstractUser, Session etc.
 
-     ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
+       ![pic18](https://user-images.githubusercontent.com/95220937/178124755-509cbf85-e1ae-4355-993b-fe0803381fea.png)
 
 
 
@@ -256,6 +258,10 @@
        ![home](https://user-images.githubusercontent.com/95220937/192063473-431a7ab5-f96f-4028-ab5a-6182de3466a5.png)
 
        [Add-category](https://user-images.githubusercontent.com/95220937/192063569-60df50f3-6871-4c72-b868-ff532ac05572.png), [Post-detail](https://user-images.githubusercontent.com/95220937/192063571-d05cbf03-e19d-49d3-b21b-0741e39ce086.png), [Signup](https://user-images.githubusercontent.com/95220937/192063573-f3229377-7ce0-48a4-92d4-21456c1bd7e2.png), [Sign-in](https://user-images.githubusercontent.com/95220937/192063773-2990d71e-7e39-44ce-a611-07e5f22b6379.png), [Categories-page](https://user-images.githubusercontent.com/95220937/192063769-74b894c2-a0d8-4bef-b8d3-1280be1be066.png), [Delete-post](https://user-images.githubusercontent.com/95220937/192063767-d5aad0fa-17eb-4429-ac8f-dab5bea9a5e6.png)
+
+     * Add post and Edit post:
+       * In add post and edit post templates django built in form was used so thats why errors are coming from django built in form and django summernote but not from templates written by me.
+       * As you can see here in [Add-post-htmlcheck](https://user-images.githubusercontent.com/95220937/194000211-9e1cb2d8-0179-4e04-bc96-db0ac57edd27.png) and [Edit-post-htmlcheck](https://user-images.githubusercontent.com/95220937/194000216-56f0d689-5a75-4610-8f6f-01669102d604.png)
 
    * CSS checker:
      * No errors were returned from [W3C CSS](https://jigsaw.w3.org/css-validator/)
