@@ -6,10 +6,9 @@
     <div class="d-flex justify-content-center top-fix">
         <h1>Edit Post</h1>
     </div>
-    <br/>
     {% if user.is_authenticated %}
         {% if user.id == post.author.id %}
-            <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center top-fix1">
                 <div class="form-group">
                     <form method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
