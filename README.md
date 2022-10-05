@@ -342,12 +342,35 @@
     * Remove DISABLE_COLLECTSTATIC=1 from congifvars within Heroku
     * Ensure DEBUG is set to false in settings.py file
 
+  * Local deployment:
+    * Log in to GitHub and locate the GitHub Repository
+
+    * Under the repository name, click "Clone or download".
+
+    * To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+
+    * Open Git Bash
+
+    * Change the current working directory to the location where you want the cloned directory to be made.
+
+    * Type git clone, and then paste the URL you copied in Step 3.
+
+    * Press Enter. Your local clone will be created.
+
+    * Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+    * Open in Gitpod
+
+    * You will need to also install all required packages in order to run this application on Heroku, refer to requirements.txt
+
+    * Command to install this apps requirements is pip3 install -r requirements.txt
+
 
   [Back to top](#)
 # Credits:
  ## Content:
    * The Idea of README.md file and the codes used for the website were also learnt from [Code Institute](https://codeinstitute.net)
-   * Few codes were also learnt from [Codemy.com](https://codemy.com/)
+   * Few codes were also learnt from [Codemy.com](https://www.youtube.com/watch?v=_ph8GF84fX4&ab_channel=Codemy.com)
    * Few codes were taken from [Stack Overflow](https://stackoverflow.com/)
 
  ## Acknowledgements:
